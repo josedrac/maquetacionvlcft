@@ -1,0 +1,104 @@
+.text-box {
+    overflow: hidden;
+    position: relative;
+    &.text-box-bg {
+        background-color: $colorGreen-500;
+        color: $colorWhite;
+    }
+    h1 {
+        text-align: center;
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .container-image {
+        overflow: hidden;
+    }
+    .arrow-right, .arrow-left, .arrow-down {
+        display: inline-block;
+        width: 0;
+        height: 0;
+    }
+    .arrow-right, .arrow-left {
+        border-top: 15px solid $colorTransparent;
+        border-bottom: 15px solid $colorTransparent;
+    }
+    .arrow-right {
+        border-left: 30px solid $colorWhite;
+    }
+    .arrow-left {
+        border-right: 30px solid $colorGreen-500;
+    }
+    .arrow-down {
+        @include horizontal-align(absolute);
+        border-left: 15px solid $colorTransparent;
+        border-right: 15px solid $colorTransparent;
+        border-top: 30px solid $colorWhite;
+        &.arrow-bg {
+            border-top-color: $colorGreen-500;
+        }
+    }
+
+    @media (min-width: $screen-tablet) {
+        img {
+            width: 100%;
+        }
+        p {
+             font-size: 1.29em;
+        }
+        .arrow-right, .arrow-left {
+            @include vertical-align(absolute);
+        }
+        .arrow-right {
+            left: 50%;
+        }
+        .arrow-left {
+            right: 50%;
+        }
+        .container-image, .container-text {
+            width: 50%;
+        }
+        .container-text {
+            left: 50%;
+            @include vertical-align(absolute);
+        }
+        .content {
+            max-width: 400px;
+            width: 90%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .right {
+            right: 0;
+        }
+        .left {
+            left: 0;
+        }
+    }
+    @media (max-width: $screen-xs-max) {
+        @include make-row;
+        .container-image, .container-text {
+            width: 100%;
+        }
+        .container-text {
+            position: relative;
+            min-height: 400px;
+            max-width: 400px;
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            .content {
+                padding-left: $grid-gutter-width / 2;
+                padding-right: $grid-gutter-width / 2;
+                @include vertical-align(absolute);
+            }
+        }
+        img {
+            width: 100%;
+        }
+        p {
+            font-size: 1.15em;
+        }
+    }
+}

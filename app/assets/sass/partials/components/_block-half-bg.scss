@@ -1,0 +1,69 @@
+.block-half-bg {
+    position: relative;
+    color: $colorWhite;
+    text-align: center;
+    .bg-one {
+        background-color: $colorGreen-400;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 50%;
+    }
+    .bg-two {
+        background-color: $colorGreen-500;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        right: 0;
+    }
+    .block-item {
+        height: 400px;
+    }
+    .block-content {
+        @include vertical-align;
+        max-width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    h1 {
+        font-family: $fontFamily-roboto;
+        font-weight: bold;
+        font-size: 2.85em;
+        margin-top: 0;
+        margin-bottom: 35px;
+    }
+    p {
+        font-size: 1.15em;
+        margin-top: 35px;
+    }
+    @media(min-width: $screen-tablet) and (max-width: $screen-sm-max) {
+        h1 {
+            margin-bottom: 20px;
+        }
+        p {
+            margin-top: 0;
+        }
+    }
+    @media(max-width: $screen-xs-max) {
+        .bg-one {
+            top: 0;
+            bottom: 50%;
+            left: 0;
+            right: 0;
+        }
+        .bg-two {
+            top: 50%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        .block-item {
+            height: 320px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+    }
+}

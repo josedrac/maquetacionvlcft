@@ -1,0 +1,29 @@
+.primary-title {
+    @include flexbox();
+    @include justify-content(flex-start);
+    @include align-items(center);
+    font-family: $fontFamily-roboto;
+    font-weight: bold;
+    margin: 20px 0;
+    .title {
+        color: $colorGreen-300;
+        margin: 0;
+        font-size: 2em;
+    }
+    a {
+        color: $colorGreen-300;
+        font-size: 1.29em;
+        &.arrow {
+            margin-left: 15px;
+            font-size: 2em;
+        }
+    }
+    @media(min-width: $screen-tablet) {
+        margin: 50px 0;
+        @include justify-content(space-between);
+        @include align-items(flex-end);
+        .title {
+            font-size: 2.85em;
+        }
+    }
+}

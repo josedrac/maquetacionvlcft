@@ -1,0 +1,59 @@
+html, body {
+    a:focus {
+        outline: 0;
+    }
+    overflow-x: hidden;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width: $screen-xs-max) {
+    .webpage {
+        @include transition(right 0.5s ease);
+        position: relative;
+        right: 0%;
+    }
+    .nav-phone-open .webpage {
+        right: 100%;
+    }
+}
+
+.img-thumbnail-phone {
+    min-width: 110px;
+    max-width: 110px;
+    height: 110px;
+    overflow: hidden;
+    margin-right: 20px;
+    img {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.film-grey {
+    @include background-black-gradient;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container-list-group {
+    margin-top: 20px;
+    @include flexbox();
+    @include justify-content(center);
+    @include flex-flow(column wrap);
+    @media(min-width: $screen-tablet) {
+        @include flex-flow(row wrap);
+    }
+}
+
+.expanded-container {
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+}

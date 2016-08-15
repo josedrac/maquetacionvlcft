@@ -1,0 +1,19 @@
+<header class="image-title block-image">
+    <img src="{{ image_header }}" alt="image title" />
+    <div class="film-grey"></div>
+    <div class="block-content">
+        <div class="container">
+            {% if breadcrumbs %}
+            <p class="breadcrumbs">
+                {% for label in breadcrumbs %}
+                <span>{{label}}</span>
+                {% if not loop.last%}
+                >
+                {% endif %}
+                {% endfor %}
+            </p>
+            {% endif %}
+            <h1 class="title">{{title}}</h1>
+        </div>
+    </div>
+</header>

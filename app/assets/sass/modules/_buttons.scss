@@ -1,0 +1,16 @@
+.btn-rounded-shop {
+    @include btn-custom(100px, $color-header-button, $colorWhite, $colorWhite);
+    padding: 10px 25px;
+}
+
+.btn-rounded-transparent {
+    @include btn-custom(100px, $colorTransparent, $colorWhite, $colorWhite);
+    border-color: $colorWhite;
+    border-style: solid;
+    padding: 8px 20px;
+}
+
+.btn-big {
+    height: 60px;
+    padding: 8px 30px;
+}

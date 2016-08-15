@@ -1,0 +1,86 @@
+.header {
+    font-family: $fontFamily-roboto;
+    .top {
+        text-align: right;
+    }
+    .header-logo {
+        padding: 10px 0 18px;
+        .launcher-menu-mobil {
+            background: $colorGreen-500;
+            color: $colorWhite;
+            text-align: center;
+            padding: 14px 0;
+            i {
+                font-size: 2.5em;
+            }
+            .launcher-text {
+                font-size: 0.8em;
+            }
+        }
+        .logo {
+            img {
+                width: 100%;
+                max-width: 331px;
+            }
+            @media(max-width: $screen-xs-max) {
+                text-align: center;
+                img {
+                    max-width: 260px;
+                }
+            }
+        }
+        .buy-button {
+            font-size: 1.08em;
+        }
+        @media(max-width: $screen-xs-max) {
+            background-color: $colorGreen-500;
+        }
+    }
+
+    ul.menu-idioma {
+        float: right;
+        margin: 5px 0 0 20px;
+        padding: 0px;
+        list-style: none;
+
+        & > li.qts_lang_item {
+            padding: 0;
+            display: inline;
+            position: relative;
+            line-height: 10px;
+            margin: 0 10px 0 0;
+            a {
+                font-size: 12px;
+                margin-right: 5px;
+                text-transform: uppercase;
+                img {
+                    vertical-align: inherit;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    ul.menu-auxiliar {
+        float: right;
+        margin: 5px 0 0 0;
+        padding: 0;
+        list-style: none;
+
+        & > li.menu-aux-item {
+            padding: 0px;
+            display: inline;
+            position: relative;
+            line-height: 10px;
+            margin: 0;
+            a {
+                font-size: 12px;
+            }
+            span.separator {
+                padding: 0 10px;
+                color: $colorGreen-300;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,62 @@
+.banner-image {
+    position: relative;
+    max-height: 460px;
+    .img-responsive {
+        width: 100%;
+    }
+    &, .banner-content {
+        overflow: hidden;
+    }
+    .banner-content {
+        @include vertical-align(absolute);
+        width: 100%;
+        text-align: center;
+    }
+    p {
+        font-family: $fontFamily-roboto;
+        font-size: 2.86em;
+        color: $colorWhite;
+        margin-bottom: 0;
+    }
+    .input-group {
+        max-width: 380px;
+        font-weight: 300;
+    }
+    .nearest-actions {
+        margin-top: 65px;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    button, .input-group {
+        font-family: $fontFamily-roboto;
+        font-size: 1.15em;
+    }
+    button {
+        font-weight: bold;
+    }
+    .input-rounded-group-addon {
+        background-color: $colorOrange-500;
+    }
+    .icon-input {
+        font-size: 20px;
+        color: $colorWhite;
+    }
+    .icon-search {
+        font-size: 25px;
+        vertical-align: bottom;
+        margin-right: 5px;
+    }
+    @media (min-width: $screen-tablet) {
+        button {
+            margin-right: 40px;
+        }
+    }
+    @media (max-width: $screen-xs-max) {
+        max-height: 250px;
+        min-height: 230px;
+        p {
+            font-size: 1.72em;
+        }
+    }
+}

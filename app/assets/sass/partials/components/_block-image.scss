@@ -1,0 +1,42 @@
+.block-image {
+    color: $colorWhite;
+    position: relative;
+    overflow: hidden;
+    img {
+        min-width: 100%;
+    }
+    .block-content {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    .block-content-center {
+        @extend .block-content;
+        top: initial;
+        bottom: initial;
+        @include vertical-align(absolute);
+    }
+    .text-default {
+        .title {
+            font-size: 2.85em;
+            margin-top: 0;
+            margin-bottom: 20px;
+            @media(max-width: $screen-xs-max) {
+                font-size: 2.5em;
+            }
+        }
+        button, .title {
+            font-family: $fontFamily-roboto;
+            font-weight: bold;
+        }
+        p {
+            font-size: 1.15em;
+            margin-bottom: 40px;
+        }
+        button {
+            font-size: 1.15em;
+            height: 50px;
+        }
+    }
+}

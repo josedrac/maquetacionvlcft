@@ -1,0 +1,18 @@
+{% extends "/base/_base.html" %}
+{% import "/includes/_title.html" as title %}
+
+{% block content %}
+    {% include "/components/_carousel.html" %}
+    {{ title.sectionTitle(actuality_title.title, actuality_title.linkTitle, actuality_title.link) }}
+    <div class="expanded-container">
+        {% include "/components/_home-actuality.html" %}
+    </div>
+    {% include "/components/_nearest.html" %}
+    {{ title.sectionTitle(tips_title.title, tips_title.linkTitle, tips_title.link) }}
+    <div class="expanded-container">
+        {% include "/components/_home-tips.html" %}
+    </div>
+    {% include "/components/_knowUs.html" %}
+    {% include "/components/_contact-us.html" %}
+    {% include "/components/_workWithUs.html" %}
+{% endblock %}

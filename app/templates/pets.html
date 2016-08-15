@@ -1,0 +1,18 @@
+{% extends "/base/_base.html" %}
+{% import "/includes/_tags.html" as macroTag %}
+
+{% block content %}
+    {% include "/components/_image-title.html" %}
+    <div class="container">
+        <div class="controls-grid">
+            {% include "/components/_buttons-grid-list.html" %}
+            {{ macroTag.tags(tags) }}
+        </div>
+        <div class="row container-list-group list-group">
+            {% for elem in list %}
+                {% include "/includes/_new.html" %}
+            {% endfor %}
+        </div>
+        {% include "/components/_pagination.html" %}
+    </div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{
+  "name": "jed",
+  "version": "0.0.1",
+  "homepage": "https://github.com/sopraux/develop.git",
+  "authors": [
+    "Gustavo Lanza Duarte <gustavo.lanza@sopra.com>",
+    "Jacobo Segovia Leon <jacobo.segovia-leon@sopra.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "2.1.1",
+    "jQuery.mmenu": "5.3.1",
+    "jquery-ui": "1.11",
+    "font-awesome": "*",
+    "bootstrap": "3.3.7",
+    "bootstrap-sass": "3.3.7",
+    "bootstrap-select": "*",
+    "roboto-fontface": "*",
+    "sass-flex-mixin": "*",
+    "wowjs": "1.1.2"
+  },
+  "dependencies": {
+    "modernizr": "components-modernizr#^2.8.3"
+  }
+}

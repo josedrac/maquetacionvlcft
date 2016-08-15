@@ -1,0 +1,67 @@
+<div class="container">
+    <nav class="navbar" role="navigation">
+        <ul class="nav navbar-nav" id="topmenu">
+            <li class="logo-fixed">
+                <a class="logo" href="index.html">
+                    <img class="hidden-xs" src="images/logo-small-mercadona.png" alt="mercadona" />
+                    <img class="visible-xs" src="images/mercadona-logo-white.png" alt="mercadona" />
+                </a>
+                <a role="button" class="visible-xs nav-phone-launch"><i class="fa fa-angle-right" aria-hidden="true"><i class="fa fa-angle-left sub-icon" aria-hidden="true"></i></i></a>
+            </li>
+            {% for menu in navbar.main_navigation %}
+                <li class="panel">
+                    <a class="{% if menu.submenu %} hidden-xs {% endif %} collapsed {% if menu.id == page_name %}active_menu{% endif %}" href="{{ menu.link }}" rel="{{ menu.rel }}">
+                        <span>{{ menu.name }}</span>
+                        {% if menu.submenu %}
+                        <i class="fa {% if menu.id == page_name %}fa-angle-up{% else %}fa-angle-down{% endif %} icon-collapse" aria-hidden="true"></i>
+                        {% endif %}
+                    </a>
+                    <a class="{% if menu.submenu %} visible-xs collapsed {% else %} hidden {% endif %}" role="button" data-toggle="collapse" data-parent="#topmenu"  data-target="#{{ menu.id }}">
+                        <span>{{ menu.name }}</span>
+                        {% if menu.submenu %}
+                        <i class="fa fa-chevron-down icon-phone-collapse" aria-hidden="true"></i>
+                        {% endif %}
+                    </a>
+                    {% if menu.submenu %}
+                    <div id="{{ menu.id }}" class="sub-menu collapse {% if menu.id == page_name %}force-show-menu{% endif %}">
+                        <div class="submenu-content">
+                            <nav id="submenu">
+                                <ul class="nav navbar-nav">
+                                    {% for section in menu.submenu %}
+                                        <li><a class="section-submenu {%if loop.first %}visible-xs{% endif %} {% if section.id == subpage_name %}active{% endif %}" href="{{ section.link }}" rel="{{ section.rel }}">{{ section.name }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+        <div class="visible-xs mgt-70">
+            <button type="button" class="btn btn-rounded-shop buy-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Compra online</button>
+        </div>
+        <div class="visible-xs mgt-30">
+            <div class="languages-menu">
+                <a href="#" rel="Go to...">Portal Tarjeta Mercadona</a>
+                <span class="separator">|</span>
+                <div class="select-group">
+                    <select class="selectpicker">
+                        <optgroup class="collapse" label="España">
+                            <option>Castellano</option>
+                            <option>Català</option>
+                            <option>Gallego</option>
+                            <option>Euskera</option>
+                        </optgroup>
+                        <optgroup label="Portugal">
+                            <option>Portugues</option>
+                        </optgroup>
+                        <optgroup label="England">
+                            <option>English</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>

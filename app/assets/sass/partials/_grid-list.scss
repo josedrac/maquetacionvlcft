@@ -1,0 +1,17 @@
+.controls-grid {
+    @include flexbox();
+    @include align-items(center);
+    margin-top: 45px;
+    .buttons-grid-list {
+        margin-right: 35px;
+        a {
+            color: $colorGrey-300;
+            &.active {
+                color: $colorGreen-500;
+            }
+            &:first-child() {
+                margin-right: 20px;
+            }
+        }
+    }
+}

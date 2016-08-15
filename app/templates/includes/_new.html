@@ -1,0 +1,31 @@
+{% import "/includes/_tags.html" as macroTag %}
+<section class="actuality col-xs-12 col-sm-6 col-lg-3">
+    <div class="content">
+        <div class="img-content">
+            <img class="" src="{{ elem.img }}" alt="..." />
+        </div>
+        <div class="content-new">
+            <a class="title" href="{{ elem.link }}" rel="...">{{ elem.title }}</a>
+            <div class="content-list">
+                <div class="date">
+                    {{ elem.date }}
+                </div>
+                {% if elem.tags %}
+                <div class="hidden-xs">
+                    {{ macroTag.tags(elem.tags) }}
+                </div>
+                {% endif %}
+            </div>
+            {% if elem.desc %}
+            <div class="description hidden-xs">
+                <p>{{ elem.desc }}</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    {% if elem.tags %}
+    <div class="visible-xs">
+        {{ macroTag.tags(elem.tags) }}
+    </div>
+    {% endif %}
+</section>

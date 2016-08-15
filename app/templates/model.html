@@ -1,0 +1,10 @@
+{% extends "/base/_base.html" %}
+{% import "/components/_text-box.html" as box %}
+
+{% block content %}
+    {% include "/components/_image-title.html" %}
+    <div class="container">
+        <p class="lead">CONTENT PAGE.</p>
+        {{ box.textBox(textBox) }}
+    </div>
+{% endblock %}

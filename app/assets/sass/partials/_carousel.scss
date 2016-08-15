@@ -1,0 +1,81 @@
+.custom-carousel {
+    img {
+        width: 100%;
+    }
+    .item {
+        max-height: 670px;
+        overflow: hidden;
+    }
+    .carousel-control {
+        background: none;
+        width: 70px;
+        &.left .carousel-control-icon {
+            left: 5px;
+        }
+        &.right .carousel-control-icon {
+            right: 5px;
+        }
+    }
+    .carousel-control-icon {
+        font-size: 60px;
+        position: absolute;
+        top: calc(50% - 30px);
+    }
+    .carousel-caption {
+        @include vertical-align(absolute);
+        bottom: initial;
+    }
+    .caption-container {
+        width: 100%;
+        max-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+        h1 {
+            font-family: $fontFamily-roboto;
+            font-size: 4em;
+            margin-bottom: 40px;
+        }
+    }
+    button {
+        font-family: $fontFamily-roboto;
+    }
+    p {
+        margin-bottom: 40px;
+    }
+    p, button {
+        font-size: 1.15em;
+    }
+    .carousel-indicators {
+        bottom: 30px;
+        li {
+            width: 14px;
+            height: 14px;
+            margin: 1px 10px;
+        }
+        .active {
+            background-color: $colorOrange-500;
+        }
+    }
+    @media(max-width: $screen-xs-max) {
+        .caption-container {
+            h1 {
+                font-size: 3.22em;
+            }
+        }
+        p, button {
+            font-size: 1.15em;
+        }
+        .carousel-caption {
+            left: 15px;
+            right: 15px;
+        }
+        .item {
+            max-height: 500px;
+            img {
+                height: 500px;
+                width: auto;
+                max-width: initial;
+            }
+        }
+    }
+}

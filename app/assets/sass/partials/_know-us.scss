@@ -1,0 +1,14 @@
+.block-image_know-us {
+    height: 570px;
+    text-align: center;
+    .container {
+        max-width: 570px;
+    }
+    button {
+        width: 90%;
+        max-width: 190px;
+    }
+    @media(max-width: $screen-xs-max) {
+        height: 330px;
+    }
+}

@@ -1,0 +1,15 @@
+{% macro sectionTitle(title, linkTitle, link) %}
+<div class="container">
+    <section class="primary-title">
+        <h2 class="title">
+            {{ title }}
+        </h2>
+        <a class="link hidden-xs" href="{{ link }}">
+            {{ linkTitle }}
+        </a>
+        <a class="link arrow visible-xs" href="{{ link }}">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </a>
+    </section>
+</div>
+{% endmacro %}

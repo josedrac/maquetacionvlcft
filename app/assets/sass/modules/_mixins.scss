@@ -1,0 +1,72 @@
+@import "../../../../bower_components/sass-flex-mixin/flex";
+
+@mixin css3-prefix($property, $value) {
+  -webkit-#{$property}: #{$value};
+   -khtml-#{$property}: #{$value};
+     -moz-#{$property}: #{$value};
+      -ms-#{$property}: #{$value};
+       -o-#{$property}: #{$value};
+          #{$property}: #{$value};
+}
+
+@mixin clear-list ($display: block) {
+    padding-left: 0;
+    margin-bottom: 0;
+    li {
+        display: $display;
+        list-style: none;
+    }
+}
+
+@mixin btn-custom ($btn-radius, $btn-bg: $colorBlack, $btn-text-color: $colorWhite, $btn-text-hover-color: $colorWhite, $btn-w: auto, $btn-h: auto) {
+    @include border-radius($btn-radius);
+    background-color: $btn-bg;
+    color: $btn-text-color;
+    width: $btn-w;
+    height: $btn-h;
+    &:focus, &:active, &:active:focus {
+        @include outline();
+        color: $btn-text-color;
+    }
+    &:hover {
+        color: $btn-text-hover-color;
+    }
+}
+
+@mixin border-radius($radius: 5px) {
+    @include css3-prefix('border-radius', $radius);
+}
+
+@mixin background-black-gradient() {
+    @include gradient-vertical($colorBlack, $colorBlack);
+    opacity: 0.23;
+}
+
+@mixin outline($outline: none, $offset: initial) {
+    outline: $outline;
+    outline-offset: $offset;
+}
+
+@mixin ellipsis ($lines: 2) {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lines;
+    text-overflow: -o-ellipsis-lastline;
+}
+
+@mixin vertical-align($position: relative) {
+    position: $position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@mixin horizontal-align($position: relative) {
+    position: $position;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}

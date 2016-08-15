@@ -1,0 +1,52 @@
+.pager {
+    margin: 20px 0 120px;
+    li {
+        a {
+            @include border-radius(5px);
+            border-color: $colorGrey-300;
+            color: $colorGreen-500;
+            font-family: $fontFamily-roboto;
+            font-size: 1.15em;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            margin: 0 3px;
+            width: 45px;
+            &.active {
+                color: $colorWhite;
+                background-color: $colorGreen-400;
+                border: none;
+            }
+        }
+        &:nth-child(2)  a {
+            @include border-left-radius(25px);
+            @extend .active;
+            width: 120px;
+        }
+        &:nth-last-child(2) a {
+            @include border-right-radius(25px);
+            @extend .active;
+            width: 120px;
+        }
+    }
+
+    @media(max-width: $screen-xs-max) {
+        @include flexbox();
+        @include justify-content(space-between);
+        @include align-items(center);
+        li {
+            a {
+                border: none;
+            }
+            &:first-child, &:nth-child(2) a {
+                float: left;
+                background: none;
+                color: $colorGreen-500;
+            }
+            &:last-child, &:nth-last-child(2) a {
+                float: right;
+                background: none;
+                color: $colorGreen-500;
+            }
+        }
+    }
+}

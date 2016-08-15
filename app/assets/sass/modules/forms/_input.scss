@@ -1,0 +1,16 @@
+.input-rounded {
+    @include border-radius(100px);
+}
+.input-rounded-group-addon {
+    @extend .input-group-addon;
+    @include border-radius(100px);
+}
+
+.input-big {
+    height: 60px;
+    padding-left: 25px;
+    +.input-rounded-group-addon {
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+}
