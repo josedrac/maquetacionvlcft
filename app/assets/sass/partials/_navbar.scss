@@ -202,7 +202,7 @@
         }
         .sub-menu {
             position: relative;
-            background-color: $colorGreen-500;
+            background-color: $colorGreen-400;
             ul {
                 margin-bottom: 0;
                 li:last-child a {
@@ -211,7 +211,7 @@
             }
         }
         .logo-fixed {
-            margin-bottom: 40px;
+            margin-bottom: 10px;
             .logo {
                 top: 5px;
             }

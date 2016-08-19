@@ -1,10 +1,18 @@
+button {
+  text-transform: uppercase;
+}
+
 .btn-rounded-shop {
-    @include btn-custom(100px, $color-header-button, $colorWhite, $colorWhite);
+    @include btn-custom(4px, $colorOrange-500, $colorWhite, $colorWhite);
     padding: 10px 25px;
 }
 
+.btn-rounded-shop:hover {
+  @include btn-custom(4px, $colorOrange-400, $colorWhite, $colorWhite);
+}
+
 .btn-rounded-transparent {
-    @include btn-custom(100px, $colorTransparent, $colorWhite, $colorWhite);
+    @include btn-custom(4px, $colorTransparent, $colorWhite, $colorWhite);
     border-color: $colorWhite;
     border-style: solid;
     padding: 8px 20px;
