@@ -1,0 +1,14 @@
+.block-text {
+    h2 {
+        color: $colorGold-400;
+    }
+    color: $colorGrey-500;
+    text-align: center;
+    height: 500px;
+    .container {
+        max-width: 570px;
+    }
+    @media(max-width: $screen-xs-max) {
+        height: 300px;
+    }
+}

@@ -12,9 +12,16 @@
         width: 100%;
         text-align: center;
     }
+    h2 {
+        font-family: $fontFamily-aux;
+        font-size: 45px;
+        text-transform: uppercase;
+        color: $colorWhite;
+        margin-bottom: 30px;
+    }
     p {
-        font-family: $fontFamily-roboto;
-        font-size: 2.86em;
+        font-family: $fontFamily-aux;
+        font-size: 41px;
         color: $colorWhite;
         margin-bottom: 0;
     }
@@ -29,7 +36,7 @@
         margin-right: auto;
     }
     button, .input-group {
-        font-family: $fontFamily-roboto;
+        font-family: $fontFamily-aux;
         font-size: 1.15em;
     }
     button {

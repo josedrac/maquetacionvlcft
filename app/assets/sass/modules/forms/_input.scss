@@ -5,12 +5,79 @@
     @extend .input-group-addon;
     @include border-radius(100px);
 }
-
 .input-big {
     height: 60px;
     padding-left: 25px;
     +.input-rounded-group-addon {
         padding-left: 20px;
         padding-right: 30px;
+    }
+}
+.suscribe-actions {
+    .selection-box {
+        position: relative;
+        clear: both;
+        min-width: 190px;
+        margin-right: 20px;
+        select {
+            background: #ffffff;
+            border: 1px solid #e4e8ea;
+            color: #a0a0a0;
+            margin: 10px 0 10px;
+            width: 100%;
+            border-radius: 3px;
+            font-size: 14px;
+            height: 42px;
+            padding: 12px 50px 11px 15px;
+            cursor: pointer;
+            text-indent: 0.01px;
+            position: relative;
+            display: block;
+            vertical-align: middle;
+       }
+       &:after {
+           content: "";
+           pointer-events: none;
+           position: absolute;
+           width: 48px;
+           height: 42px;
+           right: 0;
+           top: 0;
+           background-position: center;
+           border-radius: 0 3px 3px 0;
+           background-image: url(../images/select-compressor-gold.png);
+       }
+    }
+    &.send-group {
+        min-width: 250px;
+    }
+    .subscribe-frm {
+        input[type="email"] {
+            font-size: 13px;
+            height: 42px;
+            float: left;
+            font-weight: normal;
+            padding: 15px 10px;
+            border-radius: 0 3px 3px 0px;
+            background: #ffffff;
+            border: 1px solid #e4e8ea;
+            color: #a0a0a0;
+            font-size: 14px;
+            margin: 10px 0 10px;
+            width: 250px;
+        }
+        input[type="submit"] {
+            font-size: 13px;
+            margin-top: 0;
+            border-radius: 0 3px 3px 0px;
+            position: relative;
+            float: right;
+            color: #ffffff;
+            right: 10px;
+            bottom: 0;
+            min-height: 42px;
+            top:10px;
+            text-transform: uppercase;
+        }
     }
 }

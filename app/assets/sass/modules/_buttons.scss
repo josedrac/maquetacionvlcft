@@ -1,3 +1,4 @@
+a.btn,
 button {
   text-transform: uppercase;
 }
@@ -21,4 +22,12 @@ button {
 .btn-big {
     height: 60px;
     padding: 8px 30px;
+}
+
+.container-buttons-action {
+    text-align: center;
+    .btn-book {
+        min-width: 153px;
+        margin-left: 30px;
+    }
 }

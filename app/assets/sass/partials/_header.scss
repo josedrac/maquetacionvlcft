@@ -1,5 +1,5 @@
 .header {
-    font-family: $fontFamily-roboto;
+    font-family: $fontFamily-aux;
     .top {
         text-align: right;
     }
@@ -30,7 +30,7 @@
             }
         }
         .buy-button {
-            font-size: 1.08em;
+            font-size: 1em;
         }
         @media(max-width: $screen-xs-max) {
             background-color: $colorGreen-300;
@@ -78,7 +78,7 @@
             }
             span.separator {
                 padding: 0 10px;
-                color: $colorGreen-500;
+                color: $colorGreen-300;
             }
         }
     }

@@ -1,22 +1,26 @@
 .block-half-bg {
     position: relative;
-    color: $colorWhite;
     text-align: center;
     .bg-one {
-        background-color: $colorGreen-400;
+        background-color: $colorGrey-300;
         position: absolute;
         top: 0;
         bottom: 0;
         left: 0;
         right: 50%;
+        border-top: 1px solid $colorGrey-300;
+        border-bottom: 1px solid $colorGrey-300;
+        border-right: 1px solid $colorGrey-300;
     }
     .bg-two {
-        background-color: $colorGreen-500;
+        background-color: $colorGrey-200;
         position: absolute;
         top: 0;
         bottom: 0;
         left: 50%;
         right: 0;
+        border-top: 1px solid $colorGrey-300;
+        border-bottom: 1px solid $colorGrey-300;
     }
     .block-item {
         height: 400px;
@@ -27,19 +31,17 @@
         margin-right: auto;
         margin-left: auto;
     }
-    h1 {
-        font-family: $fontFamily-roboto;
-        font-weight: bold;
-        font-size: 2.85em;
+    h2 {
+        text-transform: none;
+        color: $colorGold-400 !important;
+        font-weight: 400;
+        font-size: 30px;
+        background: none;
+        margin-bottom: 20px;
         margin-top: 0;
-        margin-bottom: 35px;
-    }
-    p {
-        font-size: 1.15em;
-        margin-top: 35px;
     }
     @media(min-width: $screen-tablet) and (max-width: $screen-sm-max) {
-        h1 {
+        h2 {
             margin-bottom: 20px;
         }
         p {
@@ -62,7 +64,7 @@
         .block-item {
             height: 320px;
         }
-        h1 {
+        h2 {
             font-size: 2.5em;
         }
     }

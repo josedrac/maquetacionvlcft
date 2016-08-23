@@ -3,16 +3,25 @@
 
 {% block content %}
     {% include "/components/_carousel.html" %}
-    {{ title.sectionTitle(actuality_title.title, actuality_title.linkTitle, actuality_title.link) }}
+
+    {% include "/components/_tour-description.html" %}
+
+    {% include "/components/_block-info-fullsize.html" %}
+
+    {% include "/components/_block-testimonials.html" %}
+
+    <!-- {{ title.sectionTitle(tips_title.title, tips_title.linkTitle, tips_title.link) }} -->
     <div class="expanded-container">
         {% include "/components/_home-actuality.html" %}
     </div>
+
     {% include "/components/_nearest.html" %}
-    {{ title.sectionTitle(tips_title.title, tips_title.linkTitle, tips_title.link) }}
+    <!-- {{ title.sectionTitle(tips_title.title, tips_title.linkTitle, tips_title.link) }}
     <div class="expanded-container">
         {% include "/components/_home-tips.html" %}
     </div>
     {% include "/components/_knowUs.html" %}
+    -->
     {% include "/components/_contact-us.html" %}
-    {% include "/components/_workWithUs.html" %}
+    {% include "/components/_block-text.html" %}
 {% endblock %}

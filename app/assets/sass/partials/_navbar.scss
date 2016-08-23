@@ -1,7 +1,7 @@
 .nav-content {
-    font-family: $fontFamily-roboto;
+    font-family: $fontFamily-aux;
     background-color: $color-navbar-bg;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 300;
     .submenu-content {
         @extend .container;

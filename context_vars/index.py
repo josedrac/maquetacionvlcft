@@ -11,10 +11,11 @@ def get_vars():
         },
         'actuality' : [
             {
-                'img'       : 'images/news/new1.png',
-                'title'     : 'Mercadona colabora con más de 100 comedores de colegios',
+                'img'       : 'http://www.valenciafoodtourspain.com/wp-content/uploads/2016/08/La-Tomatina-Buñol-Valencia-420x287.jpg',
+                'title'     : 'La Tomatina: A Tomato Frenzy in Buñol',
                 'link'      : '#',
                 'date'      : '12 de Julio de 2016',
+                'desc'     : 'Every year on the last Wednesday of August (August 31st this year) the small town of Buñol (Valencian Community) puts on a tomato war...',
                 'tags'   : [
                     {
                         'title' : 'Etiqueta',
@@ -27,10 +28,11 @@ def get_vars():
                 ]
             },
             {
-                'img'       : 'images/news/new2.png',
-                'title'     : 'Mercadona contrata a 600 personas hasta abril',
+                'img'       : 'http://www.valenciafoodtourspain.com/wp-content/uploads/2016/08/IMG_8829-420x287.jpg',
+                'title'     : 'The Best of Valencia in 24 Hours',
                 'link'      : '#',
                 'date'      : '14 de Julio de 2016',
+                'desc'     : 'Every year on the last Wednesday of August (August 31st this year) the small town of Buñol (Valencian Community) puts on a tomato war...',
                 'tags'   : [
                     {
                         'title' : 'Etiqueta',
@@ -39,10 +41,11 @@ def get_vars():
                 ]
             },
             {
-                'img'       : 'images/news/new3.png',
-                'title'     : 'Mercadona abrirá sus puertas en Lugo',
+                'img'       : 'http://www.valenciafoodtourspain.com/wp-content/uploads/2016/07/2016-06-23-18.02.52-3-420x287.jpg',
+                'title'     : 'Bodegas Biosca – Wine Tasting In Valencia’s Ruzafa District',
                 'link'      : '#',
                 'date'      : '20 de Mayo de 2016',
+                'desc'     : 'Every year on the last Wednesday of August (August 31st this year) the small town of Buñol (Valencian Community) puts on a tomato war...',
                 'tags'   : [
                     {
                         'title' : 'Etiqueta',
@@ -55,10 +58,11 @@ def get_vars():
                 ]
             },
             {
-                'img'       : 'images/news/new4.png',
-                'title'     : 'Mercadona amplía su colaboración a dos empresas',
+                'img'       : 'http://www.valenciafoodtourspain.com/wp-content/uploads/2016/07/2016-07-16-09.53.32-420x287.jpg',
+                'title'     : 'Snorkeling in Ambolo Beach & Seafood Paella in Moraira',
                 'link'      : '#',
                 'date'      : '20 de Mayo de 2016',
+                'desc'     : 'Every year on the last Wednesday of August (August 31st this year) the small town of Buñol (Valencian Community) puts on a tomato war...',
                 'tags'   : [
                     {
                         'title' : 'Etiqueta',

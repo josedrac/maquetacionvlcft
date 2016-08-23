@@ -21,8 +21,8 @@ $gray-lighter:           $colorGrey-300 !default; // #e4e8ea
 // $brand-warning:         #f0ad4e !default;
 // $brand-danger:          #d9534f !default;
 
-$brand-primary:         $colorGreen-400 !default; // #4e8481
-$brand-success:         #5cb85c !default;
+$brand-primary:         $colorGreen-300 !default; // #62a5a1
+$brand-success:         $colorOrange-500 !default; // #B08B33
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
@@ -39,7 +39,7 @@ $text-color:            $gray !default;
 // //** Global textual link color.
 $link-color:            $colorGreen-300 !default;
 // //** Link hover color set via `darken()` function.
-$link-hover-color:      $colorGold-400 !default; // 
+$link-hover-color:      $colorGold-400 !default; //
 // //** Link hover decoration.
 $link-hover-decoration: none !default;
 
@@ -48,13 +48,14 @@ $link-hover-decoration: none !default;
 // //
 // //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:  Arial, sans-serif !default;
 // $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 // //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 // $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif;
 
-// $font-size-base:          14px !default;
+$font-size-base:          18px !default;
+$font-size-large:         $font-size-base;
 // $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 // $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
@@ -112,9 +113,9 @@ $icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "fonts/bootstrap
 // $line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
 // $line-height-small:         1.5 !default;
 
-// $border-radius-base:        4px !default;
-// $border-radius-large:       6px !default;
-// $border-radius-small:       3px !default;
+$border-radius-base:        3px !default;
+$border-radius-large:       3px !default;
+$border-radius-small:       3px !default;
 
 // //** Global color for active items (e.g., navs or dropdowns).
 // $component-active-color:    #fff !default;

@@ -1,6 +1,20 @@
 @import "bower_components/roboto-fontface/css/roboto/sass/roboto-fontface";
 
 @font-face {
+  font-family: 'sfbp';
+  src: url('../fonts/sfbp/sfbp.eot');
+  src: url('../fonts/sfbp/sfbp.woff2') format('woff2'),
+       url('../fonts/sfbp/sfbp.woff') format('woff'),
+       url('../fonts/sfbp/sfbp.ttf') format('truetype'),
+       url('../fonts/sfbp/sfbp.svg#sfbp') format('svg'),
+       url('../fonts/sfbp/sfbp.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
   font-family: 'DroidSerif';
   src: url('../fonts/droid/DroidSerif.eot');
   src: url('../fonts/droid/DroidSerif.woff2') format('woff2'),
