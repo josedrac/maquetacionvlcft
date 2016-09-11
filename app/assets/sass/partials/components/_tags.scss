@@ -1,12 +1,14 @@
 .tags {
-    font-family: $fontFamily-aux;
+    font-family: $fontFamily-roboto;
     font-weight: 500;
     .tag {
+        display: inline-block;
         color: $color-new-text-title;
         text-decoration: none;
         border: 1px solid $colorGrey-300;
         padding: 4px 12px;
         margin-right: 5px;
+        margin-bottom: 5px;
         @include border-radius(15px);
     }
 }

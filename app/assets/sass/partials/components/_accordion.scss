@@ -1,0 +1,78 @@
+.panel-group {
+    margin-bottom: 40px;
+    .panel.panel-default {
+        margin-top: 0;
+        border: none;
+        .panel-heading  {
+            color: $colorWhite;
+            background-color: $colorGreen-500;
+            @include border-radius(0);
+            border-bottom: 1px solid $colorWhite;
+            font-family: $fontFamily-roboto;
+            padding: 0;
+            .panel-title {
+                font-weight: 300;
+                line-height: 1.7em;
+                .accordion-toggle {
+                    padding: 25px 15px;
+                    display: block;
+                    position: relative;
+                    padding-right: 40px;
+                    span {
+                        right: 20px;
+                        font-size: 1.7em;
+                        color: $colorWhite;
+                        @include vertical-align(absolute);
+                        &.closed {
+                            display: none;
+                        }
+                    }
+                    &:hover, &:focus {
+                        text-decoration: none;
+                    }
+                    &.collapsed {
+                        background-color: $colorGreen-300;
+                        span {
+                            &.closed {
+                                display: inline-block;
+                            }
+                            &.opened {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .panel-collapse .panel-body {
+            border-top: none;
+            color: $colorGrey-500;
+            padding: 35px 20px;
+            line-height: 1.85em;
+            font-size: 1.2em;
+        }
+    }
+    @media (min-width: $screen-tablet) {
+        margin-top: 60px;
+        .panel.panel-default .panel-heading {
+            .panel-title {
+                font-size: 1.715em;
+                .accordion-toggle {
+                    padding: 15px 35px;
+                }
+            }
+        }
+        .panel-collapse .panel-body {
+            font-size: 1.425em;
+            padding: 45px;
+        }
+    }
+    @media (min-width: $screen-desktop) {
+        margin-top: 100px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        margin-left: $grid-gutter-width / -2;
+        margin-right: $grid-gutter-width / -2;
+    }
+}

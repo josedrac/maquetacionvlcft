@@ -1,12 +1,18 @@
 .nav-content {
-    font-family: $fontFamily-aux;
+    font-family: $fontFamily-roboto;
     background-color: $color-navbar-bg;
-    font-size: 1em;
+    //font-size: 1.2em;
     font-weight: 300;
+    &.navbar-fixed-top {
+        @include alpha-attribute('background-color', rgba($color-navbar-bg, 0.85), $color-navbar-bg);
+    }
     .submenu-content {
         @extend .container;
     }
-    .panel {
+    .active_option {
+        color: white !important;
+    }
+    .panel-menu {
         margin-bottom: 0;
         background-color: $colorTransparent;
         @include border-radius(0);
@@ -16,7 +22,7 @@
     .navbar {
         margin-bottom: 0;
         border: none;
-        position: initial;
+        position: inherit;
         .nav {
             .logo-fixed {
                 width: 0;
@@ -24,19 +30,20 @@
                 opacity: 0;
                 @include transition(all .2s ease-in-out);
                 a {
-                    padding: 13px 0 10px 0;
+                    padding: 5px 0 0 0;
                     &:hover, &:focus {
                         background-color: $colorTransparent;
                     }
                 }
             }
             li {
-                position: initial;
+                position: inherit;
             }
             a {
                 color: $color-navbar-text;
                 &:hover, &:focus {
-                    background-color: $color-navbar-hover-bg;
+                    background-color: $colorTransparent;
+                    color: white;
                 }
             }
         }
@@ -46,24 +53,48 @@
         position: absolute;
         width: 100%;
         left: 0;
+        @include alpha-attribute('background-color', rgba($color-navbar-bg, 0.9), $color-navbar-bg);
         .nav{
-            a {
-                border-bottom: 3px solid $colorTransparent;
-                &.active, &:hover, &:focus {
-                    background-color: $colorTransparent;
-                    border-bottom: 3px solid $colorWhite;
+            li:hover {
+                a::before {
+                    left: 0;
+                    width: 100%;
                 }
             }
+            a {
+                position: relative;
+                color: white;
+                &.active::before {
+                    left: 0;
+                    width: 100%;
+                }
+                &::before {
+                    @include transition (all 0.2s);
+                    content: "";
+                    position: absolute;
+                    bottom: 18px;
+                    left: 50%;
+                    height: 3px;
+                    width: 0;
+                    bottom: 0;
+                    background: $color-navbar-submenu-text-hover;
+                }
+                &:hover {
+                    color: $color-navbar-submenu-text-hover;
+                }
+            }
+
         }
     }
     &.navbar-fixed-top .navbar .nav .logo-fixed {
         opacity: 1;
         display: block;
-        width: 170px;
+        width: 120px;
         height: 45px;;
     }
     .languages-menu {
         color: $color-header-text-top;
+        margin-bottom: 15px;
         a, button.btn {
             &, &:hover, &:focus {
                 color: $colorWhite;
@@ -75,6 +106,54 @@
             }
         }
     }
+    .closed.languages-menu-mobile {
+        overflow: hidden;
+    }
+    .languages-menu-mobile {
+        @include transition(all .5s);
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        top: 0;
+        background-color: $colorGreen-300;
+        z-index: 1;
+        &.closed {
+            top: 100vh;
+            height: 0;
+        }
+        .close-languages {
+            cursor: pointer;
+            float: left;
+            font-size: 40px;
+            color: $colorWhite;
+            .sub-icon {
+                position: relative;
+                right: 4px;
+            }
+        }
+        .logo img {
+            margin-top: 20px;
+        }
+        a {
+            color: $colorWhite;
+            text-decoration: none;
+        }
+        dt {
+            color: $colorWhite;
+            font-weight: normal;
+            padding: 17px 0;
+        }
+        dd {
+            margin-left: $grid-gutter-width / -2;
+            margin-right: $grid-gutter-width / -2;
+            background-color: $colorGreen-400;
+            padding: 10px 15px;
+            &.active {
+                background-color: $colorGold-300;
+            }
+        }
+    }
+
 }
 .select-group {
     display: inline-block;
@@ -100,10 +179,11 @@
         }
         .navbar a {
             padding: 17px 10px;
-            font-size: .8385em;
+            //font-size: .8385em;
         }
         .sub-menu {
-            background-color: $color-navbar-submenu-bg;
+            @include alpha-attribute('background-color', rgba($color-navbar-bg, 0.9), $color-navbar-bg);
+            overflow: hidden;
             .section-submenu {
                 padding: 17px 0;
                 margin: 0 10px;
@@ -127,9 +207,13 @@
             padding: 17px 20px;
             font-size: 1em;
         }
-        .sub-menu .section-submenu {
-            padding: 17px 0;
-            margin: 0 20px;
+
+        .sub-menu{
+            @include alpha-attribute('background-color', rgba($color-navbar-bg, 0.9), $color-navbar-bg);
+             .section-submenu {
+                padding: 17px 0;
+                margin: 0 19px;
+            }
         }
     }
 }
@@ -139,9 +223,22 @@
         cursor: pointer;
     }
     .nav-content {
+        .icon-phone-collapse.closed {
+            display: none;
+        }
+        .collapsed {
+            .icon-phone-collapse {
+                &.opened {
+                    display: none;
+                }
+                &.closed {
+                    display: initial;
+                }
+            }
+        }
         position: absolute;
         top: 0;
-        left: 100%;
+        left: -100%;
         width: 100%;
         min-height: 100%;
         .navbar-nav {
@@ -150,10 +247,10 @@
         }
         .icon-phone-collapse {
             float: right;
-            font-size: 25px;
+            font-size: 15px;
             position: relative;
             right: 5px;
-            bottom: 5px;
+            top: 3px;
         }
         .navbar {
             .panel {
@@ -172,6 +269,9 @@
                     &, &:hover, &:active, &:focus {
                         border-bottom: none;
                     }
+                    &::before {
+                        display: none
+                    }
                 }
             }
             .nav {
@@ -185,24 +285,28 @@
                     width: auto;
                     height: auto;
                     img {
-                        max-width: 220px;
+                        max-width: 350px;
                     }
                     a {
                         display: inline-block;
                         width: auto;
                     }
+                    .logo {
+                        padding: 0;
+                    }
                 }
             }
             .sub-menu {
                 a {
-                    padding-left: 10px;
+                    padding-left: 25px;
                     padding-right: 10px;
                 }
             }
         }
         .sub-menu {
             position: relative;
-            background-color: $colorGreen-400;
+            @include alpha-attribute('background-color', rgba($color-navbar-bg, 0.9), $color-navbar-bg);
+
             ul {
                 margin-bottom: 0;
                 li:last-child a {
@@ -211,13 +315,14 @@
             }
         }
         .logo-fixed {
-            margin-bottom: 10px;
+            text-align: center;
+            margin-bottom: 20px;
             .logo {
                 top: 5px;
             }
         }
         .nav-phone-launch {
-            float: right;
+            float: left;
             font-size: 40px;
             .sub-icon {
                 position: relative;
@@ -226,12 +331,30 @@
         }
         .buy-button {
             font-size: 1em;
+            span {
+                font-weight: bold;
+                margin-right: 5px;
+            }
         }
         .languages-menu a, .languages-menu button.btn {
             font-size: .72em;
         }
+        .languages-menu {
+            .separator {
+                color: $colorWhite;
+            }
+            .languages-mobile-button .icon-language {
+                margin-left: 10px;
+            }
+        }
+        .select-group {
+            padding-right: 0;
+        }
     }
     .nav-content.navbar-fixed-top .navbar .nav .logo-fixed {
         width: 100%;
+    }
+    .nav-content .sub-menu .nav a::before {
+        background-color: transparent;
     }
 }

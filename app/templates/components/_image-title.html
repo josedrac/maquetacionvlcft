@@ -1,19 +1,41 @@
+<!-- head image and title -->
 <header class="image-title block-image">
-    <img src="{{ image_header }}" alt="image title" />
+    <picture>
+         <!--[if IE 9]><video style="display: none;"><![endif]-->
+        {% if image_header_1200 %}
+        <source srcset="{{ image_header_1200 }}" media="(min-width: 1200px)" />
+        {% endif %}
+        {% if image_header_992 %}
+        <source srcset="{{ image_header_992 }}" media="(min-width: 992px)"/>
+        {% endif %}
+        {% if image_header_768 %}
+	    <source srcset="{{ image_header_768 }}" media="(min-width: 768px)"/>
+        {% endif %}
+        {% if image_header_480 %}
+	    <source srcset="{{ image_header_480 }}" media="(min-width: 480px)"/>
+        {% endif %}
+          <!--[if IE 9]></video><![endif]-->
+	    <img src="{{ image_header }}" alt="image title" />
+    </picture>
     <div class="film-grey"></div>
     <div class="block-content">
         <div class="container">
             {% if breadcrumbs %}
             <p class="breadcrumbs">
-                {% for label in breadcrumbs %}
-                <span>{{label}}</span>
+                {% for breadcrumb in breadcrumbs %}
+                {% if breadcrumb.url %}
+                <a href="{{breadcrumb.url}}">{{breadcrumb.label}}</a>
+                {% else %}
+                <span>{{breadcrumb.label}}</span>
+                {% endif %}
                 {% if not loop.last%}
-                >
+                &#62;
                 {% endif %}
                 {% endfor %}
             </p>
             {% endif %}
-            <h1 class="title">{{title}}</h1>
+            <h1 class="title">{{primary_title}}</h1>
         </div>
     </div>
 </header>
+<!-- EO head image and title -->

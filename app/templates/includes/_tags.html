@@ -1,7 +1,9 @@
 {% macro tags(tags) %}
-<section class="tags">
+<!-- tags of item -->
+<div class="tags">
     {% for tag in tags %}
-    <a class="tag" href="{{ tag.link }}" rel="...">{{ tag.title }}</a>
+    <a class="tag" href="{{ tag.link }}">{{ tag.title }}</a>
     {% endfor %}
-</section>
+</div>
+<!-- EO tags of item -->
 {% endmacro %}

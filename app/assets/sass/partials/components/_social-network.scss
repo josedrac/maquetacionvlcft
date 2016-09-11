@@ -1,0 +1,31 @@
+.social-newtwork{
+    display: inline-block;
+    padding: 0;
+    margin: 40px 0 20px;
+    li {
+        display: inline-block;
+        .text {
+            color: $colorGrey-500;
+            margin-right: 10px;
+            font-family: $fontFamily-roboto;
+        }
+        .fa-circle-thin {
+            color: $colorGrey-300;
+        }
+        .fa-facebook {
+            color: $colorBlue-100;
+        }
+        .fa-twitter {
+            color: $colorBlue-100;
+        }
+        .fa-google-plus {
+            color: $colorRed-300;
+        }
+        .fa-envelope-o {
+            color: $colorGreen-300;
+        }
+        .fa-whatsapp {
+            color: $colorGreen-300;
+        }
+    }
+}

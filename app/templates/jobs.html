@@ -1,0 +1,22 @@
+{% extends "/base/_base.html" %}
+{% import "/includes/_imageSection.html" as knowUs %}
+
+{% block content %}
+    {% include "/components/_image-title.html" %}
+    <div class="container">
+        <div class="paragraph mgb-sm-100">
+            <p>
+                Mercadona ofrece a sus trabajadoras y trabajadores un clima laboral en el que se fomentan iniciativas que propician el crecimiento conjunto tanto en el ámbito personal como en el profesional y en el que el esfuerzo, la responsabilidad, el liderazgo y la mejora constante son variables clave.
+            </p>
+        </div>
+    </div>
+    <div class="container-job-advantages">
+        <div class="container">
+            {% include "/components/_video-text.html" %}
+        </div>
+    </div>
+    {{ knowUs.imageSection(know_us) }}
+    <div class="mgt-50 mgt-sm-100 mgb-120">
+        {% include "/components/_nearest.html" %}
+    </div>
+{% endblock %}

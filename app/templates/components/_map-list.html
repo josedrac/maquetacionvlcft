@@ -1,0 +1,26 @@
+<!-- map search list -->
+<article class="map-search">
+    <h1 class="title">Valencia</h1>
+    {% for i in range(2) %}
+    <p class="location">Localidad</p>
+    <ul class="map-list">
+        {% for ii in range(6) %}
+        <li class="row">
+            <div class="col-xs-12 address"><p>C/ Lorem Ipsum, 1</p></div>
+            <div class="col-xs-12 col-custom-phone"><p><span class="icon-fmd-phone"></span> 961537759</p></div>
+            <div class="col-xs-12 col-custom-time"><p><span class="icon-fmd-clock"></span> Abierto ahora: 09:00 - 21:30</p></div>
+            <div class="col-xs-12 col-custom-parking"><p><span class="icon-fmd-parking"></span> Parking disponible</p></div>
+            <div class="col-xs-12 col-custom-schedule"><p><span class="icon-fmd-schedule"></span> Abierto festivo: 01/02/2016</p></div>
+            <div class="col-xs-12 col-custom-howgo">
+                <a href="#" class="howgo"><span class="hidden-md hidden-lg">Cómo llegar</span> <span class="icon-fmd-back"><span class="path1"></span><span class="path2"></span></span></a>
+            </div>
+            <div class="col-xs-12 hidden-xs">
+                <hr />
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+    {% include "/components/_pagination.html" %}
+</article>
+<!-- EO map search list -->

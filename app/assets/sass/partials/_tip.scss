@@ -1,76 +1,16 @@
-.tip {
-    padding: 0;
-    border-top: 1px solid $colorGrey-300;
-    @include flexbox();
-    @include justify-content(space-between);
-    @include align-items(center);
-    .content {
-        @include flexbox();
-        @include align-items(center);
-        .img-content {
-            @extend .img-thumbnail-phone;
-        }
-        .content-new {
-            .title{
-                text-decoration: none;
-                color: $color-new-text-title;
-                font-size: 1.9em;
-                font-weight: bold;
-            }
-            .description {
-                color: $colorGrey-500;
-                margin-bottom: 0;
-            }
+.last-posts .new-blog {
+    display: none;
+    &:first-child {
+        display: inherit;
+    }
+    @media (min-width: $screen-tablet) {
+        &:nth-child(2) {
+            display: inherit;
         }
     }
-    i {
-        color: $color-new-text-title;
-        font-size: 1.9em;
-        margin: 0 25px 0 10px;
-    }
-
-    @media(min-width: $screen-tablet) {
-        border-top: 0;
-        border-bottom: 1px solid $colorGrey-300;
-        border-left: 1px solid $colorGrey-300;
-        @include align-items(star-flex);
-        &:nth-child(4n), &:last-child {
-            border-right: 1px solid $colorGrey-300;
-        }
-        .content {
-            @include flex-direction(column);
-            .img-content {
-                max-width: 100%;
-                width: 100%;
-                height: auto;
-                margin-right: 0;
-                img {
-                    width: 100%;
-                    height: auto;
-                }
-            }
-            .content-new {
-                padding: 35px;
-                .title {
-                    margin: 0 0 20px;
-                    text-align: center;
-                    display: block;
-                }
-                .description {
-                    font-size: 1.12em;
-                    line-height: 1.6em;
-                }
-            }
-        }
-    }
-
-    @media(min-width: $screen-desktop) {
-        .content .content-new {
-            padding: 35px 40px 60px;
-            .title {
-                margin-bottom: 30px;
-                font-size: 2.4em;
-            }
+    @media (min-width: $screen-lg-desktop) {
+        &:nth-child(3) {
+            display: inherit;
         }
     }
 }

@@ -1,0 +1,21 @@
+{% extends "/base/_base.html" %}
+{% import "/includes/_imageSection.html" as sections %}
+{% import "/components/_text-box.html" as box %}
+
+{% block content %}
+    {% include "/components/_image-title.html" %}
+    <div class="container">
+        <div class="paragraph">
+            <p>
+                La Tarjeta Mercadona es una tarjeta para realizar el pago de sus compras de la forma más sencilla, cómoda y segura. Es una tarjeta totalmente gratuita, cuenta con dos formas de pago: diario o mensual para adaptarse a sus necesidades y le permite un mejor control por el envío mensual de un extracto detallado de todas sus compras.
+            </p>
+        </div>
+        {{ box.textBox(textBox) }}
+    </div>
+    <div class="mgb-110 mgt-100">
+        {{ sections.imageSection(target) }}
+    </div>
+    <div class="mgb-110">
+        {{ sections.imageSection(invoice) }}
+    </div>
+{% endblock %}

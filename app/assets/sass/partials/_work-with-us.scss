@@ -1,0 +1,20 @@
+.block-work-with-us {
+    color: $colorGreen-500;
+    text-align: center;
+    height: 500px;
+    .container {
+        max-width: 570px;
+    }
+    .btn-rounded-transparent {
+        &, &:hover, &:active {
+            color: $colorGreen-500;
+        }
+        border-color: $colorGrey-300;
+    }
+    @media(max-width: $screen-xs-max) {
+        height: 300px;
+        .text-default .title {
+            margin-bottom: 30px;
+        }
+    }
+}

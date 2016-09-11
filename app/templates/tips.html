@@ -1,7 +1,41 @@
 {% extends "/base/_base.html" %}
+{% import "/includes/_title.html" as title %}
+{% import "/includes/_tips-header.html" as headerTip %}
 
 {% block content %}
+{% include "/components/_image-title.html" %}
     <div class="container">
-        <p class="lead">CONTENT PAGE.</p>
+        <div class="paragraph mgb-sm-100 bb-0">
+            <p>La Tarjeta Mercadona es una tarjeta para realizar el pago de sus compras de la forma más sencilla, cómoda y segura. Es una tarjeta totalmente gratuita, cuenta con dos formas de pago: diario o mensual para adaptarse a sus necesidades y le permite un mejor control por el envío mensual de un extracto detallado de todas sus compras.</p>
+        </div>
+        {{ headerTip.tipTitle(headerFood) }}
+        {{ title.sectionTitle('Últimos posts de Alimentación') }}
+        <div class="last-posts row container-list-group list-group">
+            {% for elem in list %}
+                {% include "/includes/_new-blog.html" %}
+            {% endfor %}
+        </div>
+        {{ headerTip.tipTitle(headerPerfumery) }}
+        {{ title.sectionTitle('Últimos posts de Perfumería') }}
+        <div class="last-posts row container-list-group list-group">
+            {% for elem in list %}
+                {% include "/includes/_new-blog.html" %}
+            {% endfor %}
+        </div>
+        {{ headerTip.tipTitle(headerHouse) }}
+        {{ title.sectionTitle('Últimos posts de Hogar') }}
+        <div class="last-posts row container-list-group list-group">
+            {% for elem in list %}
+                {% include "/includes/_new-blog.html" %}
+            {% endfor %}
+        </div>
+        {{ headerTip.tipTitle(headerPets) }}
+        {{ title.sectionTitle('Últimos posts de Mascotas') }}
+        <div class="last-posts row container-list-group list-group">
+            {% for elem in list %}
+                {% include "/includes/_new-blog.html" %}
+            {% endfor %}
+        </div>
     </div>
+    {% include "/components/_magazine.html" %}
 {% endblock %}

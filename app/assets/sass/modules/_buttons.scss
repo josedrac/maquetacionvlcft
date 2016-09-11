@@ -1,15 +1,9 @@
-a.btn,
-button {
-  text-transform: uppercase;
-}
-
 .btn-rounded-shop {
-    @include btn-custom(4px, $colorOrange-500, $colorWhite, $colorWhite);
+    @include btn-custom(4px, $colorGold-300, $colorWhite, $colorWhite);
     padding: 10px 25px;
-}
-
-.btn-rounded-shop:hover {
-  @include btn-custom(4px, $colorOrange-400, $colorWhite, $colorWhite);
+    &:hover {
+        background-color: $colorGreen-500;
+    }
 }
 
 .btn-rounded-transparent {
@@ -17,6 +11,29 @@ button {
     border-color: $colorWhite;
     border-style: solid;
     padding: 8px 20px;
+    &:hover {
+        background-color: $colorGold-300;
+    }
+}
+
+.btn-rounded-orange {
+    @include btn-custom(4px, $colorGold-300, $colorWhite, $colorWhite);
+    border-color: $colorWhite;
+    border-style: solid;
+    padding: 8px 20px;
+    &:hover {
+        background-color: $colorGreen-500;
+    }
+}
+
+.btn-rounded-orange-border {
+    @extend .btn-rounded-transparent;
+    border-color: $colorGold-200;
+    border-style: solid;
+    padding: 8px 20px;
+    &:hover {
+        background-color: $colorGold-300;
+    }
 }
 
 .btn-big {
@@ -24,10 +41,21 @@ button {
     padding: 8px 30px;
 }
 
-.container-buttons-action {
-    text-align: center;
-    .btn-book {
-        min-width: 153px;
-        margin-left: 30px;
+.btn-rounded-job {
+    font-size: 1.145em;
+    padding: 0 30px;
+    @include btn-custom (25px, $colorGreen-500, $colorWhite, $colorWhite, auto, 50px);
+    &:hover {
+        background-color: $colorGold-300;
+    }
+}
+
+.btn-form-sumbit {
+    font-family: $fontFamily-roboto;
+    font-weight: bold;
+    font-size: 1.15em;
+    width: 150px;
+    @media (max-width: $screen-xs-max) {
+        width: 100%;
     }
 }

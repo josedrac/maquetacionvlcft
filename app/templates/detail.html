@@ -1,0 +1,35 @@
+{% extends "/base/_base.html" %}
+{% import "/includes/_title.html" as title %}
+
+{% block content %}
+    {% include "/components/_image-title.html" %}
+    <div class="container">
+        <div class="row">
+            <article class="detail-new col-xs-12 col-sm-offset-1 col-sm-10">
+                {% include "/includes/_social-network.html" %}
+                <p>Mercadona inicia la temporada de manzanas españolas y, como todos los años, ofrece en todas sus tiendas las variedades de Navelina, Navel/Navelate, Lane-Late, Lane-Late Powell y Valencia-Late. Concretamente ya están disponibles en las tiendas Mercadona las naranjas de variedad Navelinas, a las que le seguirán el resto de variedades, que permanecerán a la venta en las todas tiendas de España hasta agosto de 2016.</p>
+                <p>Para garantizar la máxima frescura y mantener las propiedades de las naranjas, Mercadona reduce los desplazamientos innecesarios y lleva las naranjas de los campos más próximos a  supermercados,  permite ofrecerlas a los clientes en su punto óptimo de maduración y a un buen precio.</p>
+                <p>En Mercadona todas las manzanas son de origen nacional desde que se inicia la temporada a finales de octubre y hasta mediados de agosto del año siguiente. Sólo se importan naranjas entre los meses de agosto y octubre debido a que no queda producción española o la existente no reúne las condiciones que los clientes exigen. Después, a finales de octubre con el inicio de la nueva temporada, las naranjas españolas vuelven a Mercadona.</p>
+                {% include "/includes/_blockquote.html" %}
+                <h2>En la campaña anterior</h2>
+                <p>Mercadona compró más de 90.000 toneladas de naranjas y mandarinas españolas y de aquí a final de año Mercadona comprará otras 30.000 toneladas más para seguir cubriendo la campaña de naranja española. Es decir, Mercadona finalizará 2014 con la compra de más de 130.000 toneladas de naranjas y mandarinas españolas, un 12% más que en 2013.</p>
+                <p>Desde hace años, el 90% del total de naranjas y mandarinas que vende Mercadona son de origen nacional, lo que afirma el compromiso y apuesta de Mercadona.</p>
+                <p>Mercadona trabaja conjuntamente con el sector primario español y, para ello, mantiene acuerdos estables con 5.600 agricultores, 3.600 ganaderos y 8.000 pescadores.</p>
+                <img src="images/img-detail.jpg" alt="">
+                <p>En la campaña anterior, Mercadona compró más de 90.000 toneladas de naranjas y mandarinas españolas y de aquí a final de año Mercadona comprará otras 30.000 toneladas más para seguir cubriendo la campaña de naranja española. Es decir, Mercadona finalizará 2014 con la compra de más de 130.000 toneladas de naranjas y mandarinas españolas, un 12% más que en 2013.</p>
+                <p>Desde hace años, el 90% del total de naranjas y mandarinas que vende Mercadona son de origen nacional, lo que afirma el compromiso y apuesta de Mercadona por esa fruta española por excelencia.</p>
+                <p>Mercadona trabaja conjuntamente con el sector primario español y, para ello, mantiene acuerdos estables con 5.600 agricultores, 3.600 ganaderos y 8.000 pescadores de 80 lonjas de toda España y realizamos compras en España por valor de 14.500 millones de euro.</p>
+                {% include "/includes/_social-network.html" %}
+            </article>
+        </div>
+        {% include "/components/_arrows-post.html" %}
+        <div class="hidden-xs">
+            {{ title.sectionTitle('Más actualidad') }}
+            <div class="last-posts container-list-group list-group">
+                {% for elem in list %}
+                    {% include "/includes/_new-blog.html" %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

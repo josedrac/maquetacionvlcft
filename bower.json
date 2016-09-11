@@ -1,7 +1,7 @@
 {
-  "name": "jed",
+  "name": "mercadona",
   "version": "0.0.1",
-  "homepage": "https://github.com/sopraux/develop.git",
+  "homepage": "https://github.com/sopraux/mercadona-web-corporativa",
   "authors": [
     "Gustavo Lanza Duarte <gustavo.lanza@sopra.com>",
     "Jacobo Segovia Leon <jacobo.segovia-leon@sopra.com>"
@@ -28,7 +28,9 @@
     "bootstrap-select": "*",
     "roboto-fontface": "*",
     "sass-flex-mixin": "*",
-    "wowjs": "1.1.2"
+    "wowjs": "1.1.2",
+    "picturefill": "3.0.1",
+    "js-cookie": "^2.1.2"
   },
   "dependencies": {
     "modernizr": "components-modernizr#^2.8.3"

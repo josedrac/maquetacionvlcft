@@ -3,11 +3,10 @@
     position: relative;
     overflow: hidden;
     img {
-        min-width: 100%;
+        height: 100%;
     }
     .block-content {
         position: absolute;
-        top: 0;
         bottom: 0;
         width: 100%;
     }
@@ -19,8 +18,7 @@
     }
     .text-default {
         .title {
-            font-size: 45px;
-            font-weight: 500;
+            font-size: 2.85em;
             margin-top: 0;
             margin-bottom: 20px;
             @media(max-width: $screen-xs-max) {
@@ -28,8 +26,8 @@
             }
         }
         button, .title {
-            font-family: $fontFamily-aux;
-            font-weight: 500;
+            font-family: $fontFamily-roboto;
+            font-weight: bold;
         }
         p {
             font-size: 1.15em;
@@ -38,6 +36,13 @@
         button {
             font-size: 1.15em;
             height: 50px;
+        }
+    }
+    @media (min-width: $screen-desktop) {
+        img {
+            min-width: 100%;
+            min-height: 100%;
+            height: auto;
         }
     }
 }

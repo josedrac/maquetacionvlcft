@@ -1,0 +1,111 @@
+.timeline {
+    margin-bottom: 165px;
+    .img-header {
+        text-align: center;
+        margin: 40px 0 25px;
+    }
+    .content {
+        @include flexbox();
+        .diagram {
+            width: 85px;
+            min-width: 85px;
+            text-align: center;
+            font-size: 0;
+            margin-right: 30px;
+            .circle {
+                @include border-radius(100px);
+                width: 85px;
+                height: 85px;
+                border: 10px solid $colorGreen-300;
+                background: $colorWhite;
+                position: absolute;
+            }
+            .line {
+                border-left: 8px solid $colorGreen-300;
+                height: 100%;
+                min-height: 95px;
+                display: inline-block;
+            }
+        }
+        .content-text {
+            width: 100%;
+            font-size: 1em;
+            margin-bottom: 110px;
+            .description {
+                .date {
+                    font-family: $fontFamily-roboto;
+                    font-size: 4.6em;
+                    color: $colorGreen-300;
+                    margin-bottom: 30px;
+                    text-align: center;
+                    span {
+                        margin-left: 30px;
+                    }
+                }
+                .text {
+                    color: $colorGrey-500;
+                    font-size: 1.145em;
+                }
+            }
+        }
+        .content-img {
+            @include flexbox();
+            @include align-items(center);
+            @include justify-content(center);
+            width: 100%;
+            margin: 50px 0;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+    @media (min-width: $screen-tablet) {
+        .content {
+            .diagram {
+                margin: 0 60px;
+                min-height: 345px;
+            }
+            .content-text {
+                @include flexbox();
+                @include align-items(flex-start);
+                .description {
+                    background-color: $colorWhite;
+                    opacity: .9;
+                    .date {
+                        text-align: left;
+                        padding: 0 25px;
+                    }
+                    .text {
+                        display: block;
+                        padding: 0 25px 20px;
+                    }
+                }
+                .arrow {
+                    width: 0;
+                    height: 0;
+                    border-top: 15px solid transparent;
+                    border-bottom: 15px solid transparent;
+                    margin-top: 27px;
+                    opacity: .9;
+                    &.arrow-right {
+                        border-left: 25px solid $colorWhite;
+                    }
+                    &.arrow-left {
+                        border-right: 25px solid $colorWhite;
+                    }
+                }
+            }
+            &.even {
+                @include flex-direction(row-reverse);
+                .content-text {
+                    @include flex-direction(row-reverse);
+                }
+            }
+        }
+        .img-bg img {
+            position: absolute;
+            z-index: -1;
+            max-width: 100%;
+        }
+    }
+}

@@ -24,13 +24,20 @@
    You need to run: `npm install`
 
 
-3. Gulp: default task
+3. Gulp: `gulp [task] [option]`
+    * The default `[task]`, build the project on dist folder in app directory of the project and run the APP on localhost.
 
-    * To run app: gulp   
-    * To generate the static files: gulp dist
+        > You can add a `[option]` `--uglify` to minimize css and uglify js code.
 
-   Default task include the following tasks 'sass-lint', 'jshint', 'sass', 'vendor-scripts', 'scripts' and 'watch'.
+    * The build `[task]`, build the project on dist folder in app directory of the project.
 
+        > You can add a `[option]` `--uglify` to minimize css and uglify js code.
+
+        > You can add a `[option]` `--release` to build in a release folder and upload on a repository a release with the settings inserted on terminal.
+
+4. Notes:
+
+    * The script of the Google's captcha can't be downloaded, and it's been added from google's servers (as Google says). Also it must include the public key on the page domain.
 
 # Useful links
 
@@ -44,16 +51,39 @@
   * [OOCSS] (http://appendto.com/2014/04/oocss) introduction
   * [Javascript patterns] (http://shichuan.github.io/javascript-patterns)
 
-3. Gulp plugins
+2. Gulp plugins
 
+  * [child_process] (https://nodejs.org/api/child_process.html)
   * [autoprefixer] (https://www.npmjs.org/package/gulp-autoprefixer/)
-  * [cache] (https://www.npmjs.org/package/gulp-cache/)
   * [concat] (https://www.npmjs.org/package/gulp-concat/)
+  * [connect] (https://www.npmjs.com/package/gulp-connect/)
+  * [github-release] (https://www.npmjs.com/package/gulp-github-release/)
+  * [gulp-htmlhint] (https://www.npmjs.com/package/gulp-htmlhint/)
   * [del] (https://www.npmjs.org/package/del/)
+  * [if] (https://github.com/robrich/gulp-if/)
   * [jshint] (https://www.npmjs.org/package/gulp-jshint/)
   * [minifycss] (https://www.npmjs.org/package/gulp-minify-css/)
   * [notify] (https://www.npmjs.org/package/gulp-notify/)
-  * [rename] (https://www.npmjs.org/package/gulp-rename/)
+  * [prompt] (https://www.npmjs.com/package/gulp-prompt)
+  * [htmlhint-stylish] (https://www.npmjs.com/package/htmlhint-stylish/)
+  * [jshint-stylish] (https://www.npmjs.com/package/jshint-stylish/)
   * [runSequence] (https://www.npmjs.org/package/run-sequence/)
   * [sass] (https://www.npmjs.org/package/gulp-sass/)
   * [uglify] (https://www.npmjs.org/package/gulp-uglify/)
+  * [zip] (https://www.npmjs.com/package/gulp-zip/)
+
+3. Font Icons
+
+  * [icomoon] (https://icomoon.io/app/#/select)
+
+    > Font Name: FontMercadona
+
+    > Class Prefix: icon-fmd-
+
+    > Support IE 8 checked
+
+    > CSS Selector: Use Attribute Selectors
+
+    > Font Metrics 1024; 6.25; 50;
+
+    > Version 1.0

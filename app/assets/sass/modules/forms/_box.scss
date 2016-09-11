@@ -1,0 +1,10 @@
+.box-form {
+    @include border-radius(4px);
+    border: 1px solid $colorGrey-300;
+    padding: 25px 20px;
+    margin-bottom: 30px;
+    p {
+        color: $colorGrey-400;
+        margin-bottom: 0;
+    }
+}

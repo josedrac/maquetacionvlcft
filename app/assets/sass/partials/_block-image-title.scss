@@ -1,8 +1,11 @@
 .image-title {
-    font-family: $fontFamily-aux;
+    font-family: $fontFamily-roboto;
     height: 550px;
     .breadcrumbs {
         margin-bottom: 0;
+        a {
+            color: $colorWhite;
+        }
     }
     .title {
         font-size: 4em;

@@ -1,0 +1,13 @@
+{% macro tipTitle(data) %}
+<section class="tips-header row">
+    <div class="container-text col-xs-12 col-md-6">
+        <div class="text">
+            <h2>{{ data.title }}</h2>
+            <p>Lorem ipsum dolor sit amet, consur adipiscing elit. Sed laoreet tristique orci non pellentesque. Integer semper diam dolor eu suscipit justo malesuada id.</p>
+        </div>
+    </div>
+    <div class="image col-xs-12 col-md-6">
+        <img src="{{ data.image }}" alt="{{ data.alt }}" class="wow fadeInUp" />
+    </div>
+</section>
+{% endmacro %}

@@ -3,7 +3,7 @@
         width: 100%;
     }
     .item {
-        max-height:450px;
+        max-height: 470px;
         overflow: hidden;
     }
     .carousel-control {
@@ -31,15 +31,19 @@
         margin-left: auto;
         margin-right: auto;
         h1 {
-            font-family: $fontFamily-aux;
+            font-family: $fontFamily-roboto;
+            font-size: 4em;
             margin-bottom: 40px;
         }
     }
     button {
-        font-family: $fontFamily-aux;
+        font-family: $fontFamily-roboto;
     }
     p {
         margin-bottom: 40px;
+    }
+    p, button {
+        font-size: 1.15em;
     }
     .carousel-indicators {
         bottom: 30px;
@@ -49,14 +53,18 @@
             margin: 1px 10px;
         }
         .active {
-            background-color: $colorOrange-500;
+            border: 0;
+            background-color: $colorGold-300;
         }
     }
     @media(max-width: $screen-xs-max) {
         .caption-container {
             h1 {
-                font-size: 25px;
+                font-size: 3.22em;
             }
+        }
+        p, button {
+            font-size: 1.15em;
         }
         .carousel-caption {
             left: 15px;

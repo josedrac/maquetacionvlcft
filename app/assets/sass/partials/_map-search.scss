@@ -1,0 +1,106 @@
+.map-search {
+    .title {
+        font-size: 2.22em;
+        color: $colorGreen-500;
+        margin-bottom: 60px;
+    }
+    .location {
+        font-family: $fontFamily-roboto;
+        font-weight: 500;
+        font-size: 1.58em;
+        color: $colorGrey-600;
+    }
+    .map-list {
+        font-family: $fontFamily-roboto;
+        margin-top: 30px;
+    }
+    li {
+        font-size: 1.29em;
+        color: $colorGrey-500;
+    }
+    .address {
+        font-size: 1.22em;
+        color: $colorGreen-300;
+        margin-bottom: 10px;
+    }
+    [class^="icon-fmd-"], [class*=" icon-fmd-"] {
+        font-size: 24px;
+        vertical-align: top;
+        padding-right: 5px;
+    }
+    .howgo {
+        display: block;
+        color: $colorGreen-300;
+    }
+    hr {
+        margin-top: 15px;
+        margin-bottom: 30px;
+        border-color: $colorGrey-300;
+    }
+
+    .map-list {
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-bottom: 40px;
+    }
+
+    @media(min-width: $screen-lg-desktop) {
+        .col-custom-phone {
+            width: 16%;
+        }
+        .col-custom-time {
+            width: 29%;
+        }
+        .col-custom-parking {
+            width: 21%;
+        }
+        .col-custom-schedule {
+            width: 28%;
+        }
+        .col-custom-howgo {
+            width: 6%;
+        }
+    }
+
+    @media(min-width: $screen-desktop) and (max-width: $screen-md-max) {
+        .col-custom-phone {
+            width: 19%;
+        }
+        .col-custom-time {
+            width: 25%;
+        }
+        .col-custom-parking {
+            width: 26%;
+        }
+        .col-custom-schedule {
+            width: 22%;
+        }
+        .col-custom-howgo {
+            width: 8%;
+        }
+    }
+
+    @media(max-width: $screen-sm-max) {
+        .howgo {
+            text-align: right;
+        }
+    }
+    @media(max-width: $screen-xs-max) {
+        .location {
+            margin-bottom: 0;
+        }
+        .map-list {
+            margin-top: 0;
+            padding-left: 15px;
+            padding-right: 15px;
+            li {
+                padding-top: 30px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid $colorGrey-300;
+            }
+        }
+        .title {
+            margin-bottom: 30px;
+        }
+    }
+}

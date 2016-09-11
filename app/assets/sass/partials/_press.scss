@@ -1,0 +1,17 @@
+.block-image-press {
+    .icon {
+        font-size: 1.7em;
+    }
+    .icon-container {
+        p {
+            margin-bottom: 10px;
+            display: block;
+        }
+        a {
+            color: $colorWhite;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

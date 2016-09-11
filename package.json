@@ -1,8 +1,10 @@
 {
-  "name": "jed",
+  "name": "mercadona",
   "description": "Mercadona",
   "version": "0.0.1",
-  "repository": "https://github.com/sopraux/mercadona-web-corporativa",
+  "repository": {
+    "url": "https://github.com/sopraux/mercadona-web-corporativa"
+  },
   "scripts": {
     "postinstall": "bower install"
   },
@@ -13,21 +15,27 @@
   "private": true,
   "license": "MIT",
   "devDependencies": {
+    "child_process": "^1.0.2",
     "del": "^1.x.x",
     "gulp": "^3.x.x",
-    "gulp-angular-embed-templates": "^2.3.0",
     "gulp-autoprefixer": ">=2.x.x",
+    "gulp-clean-css": "^2.0.12",
     "gulp-concat": "^2.x.x",
     "gulp-connect": "2.2.0",
+    "gulp-github-release": "^1.1.5",
+    "gulp-htmlhint": "^0.3.1",
+    "gulp-if": "^2.0.1",
     "gulp-jshint": "^1.x.x",
     "gulp-minify-css": ">=0.5.x",
     "gulp-notify": "^2.x.x",
-    "gulp-rename": "^1.2.0",
+    "gulp-prompt": "^0.2.0",
     "gulp-sass": ">=1.x.x",
-    "gulp-shell": "",
     "gulp-uglify": ">=1.x.x",
+    "gulp-zip": "^3.2.0",
+    "htmlhint-stylish": "^1.0.3",
     "jshint-stylish": "^1.0.1",
     "run-sequence": "^1.x.x",
-    "sassdoc": "^2.x.x"
+    "sassdoc": "^2.x.x",
+    "yargs": "^5.0.0"
   }
 }

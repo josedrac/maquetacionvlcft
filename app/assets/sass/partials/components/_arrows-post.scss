@@ -1,0 +1,43 @@
+.arrows-post {
+    @include flexbox();
+    @include justify-content(space-between);
+    margin: 45px 0 85px;
+    .previous, .next {
+        @include flexbox();
+        @include align-items(center);
+        color: $colorGreen-300;
+        text-decoration: none;
+    }
+    .previous span {
+        padding-right: 30px;
+    }
+    .next span {
+        padding-left: 30px;
+    }
+    .text {
+        display: inline-block;
+        max-width: 75px;
+        .title {
+            font-family: $fontFamily-roboto;
+            font-size: 1.285em;
+        }
+        .description {
+            @include ellipsis(2);
+            color: $colorGrey-500;
+            font-size: 0.925em;
+            padding-top: 5px;
+        }
+    }
+
+    @media (min-width: $screen-tablet) {
+        .previous span {
+            padding-right: 65px;
+        }
+        .next span {
+            padding-left: 65px;
+        }
+        .text {
+            max-width: 165px;
+        }
+    }
+}

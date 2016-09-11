@@ -1,19 +1,21 @@
 {% macro textBox(groupsBox) %}
-<section>
+<!-- box items text with image -->
+<section class="text-box-group">
     {% for group in groupsBox %}
     <article class="text-box {{ loop.cycle('', 'text-box-bg') }}">
         <div class="container-text {{ loop.cycle('left', 'right') }}">
             <div class="content">
-                <h1>{{ group.title }}</h1>
+                <h2>{{ group.title }}</h2>
                 <p>{{ group.text }}</p>
             </div>
         </div>
         <div class="hidden-xs {{ loop.cycle('arrow-right', 'arrow-left') }}"></div>
         <div class="container-image {{ loop.cycle('pull-right', 'pull-left') }}">
             <div class="hidden-sm hidden-md hidden-lg arrow-down {{ loop.cycle('', 'arrow-bg') }}"></div>
-            <img src="{{ group.img }}" alt="{{ group.alt }}" />
+            <img class="wow fadeIn" src="{{ group.img }}" alt="{{ group.alt }}" />
         </div>
     </article>
     {% endfor %}
 </section>
+<!-- EO box items text with image -->
 {% endmacro %}

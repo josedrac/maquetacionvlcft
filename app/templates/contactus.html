@@ -1,0 +1,13 @@
+{% extends "/base/_base.html" %}
+
+{% block content %}
+    {% include "/components/_image-title.html" %}
+    <div class="container">
+        <div class="paragraph mgb-sm-100 bb-0">
+            <p>Los datos personales son optativos, y sólo harán falta si desea recibir contestación. Si rellena estos campos, Mercadona le garantiza su confidencialidad y su exclusivo uso para gestionar la respuesta a su petición. También puedes utilizar la firma digital para rellenar tus datos.</p>
+        </div>
+        {% include "/components/_contactus-form.html" %}
+    </div>
+    {% include "/components/_nearest.html" %}
+    {% include "/components/_workWithUs.html" %}
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "/base/_base.html" %}
+{% import "/includes/_title.html" as title %}
+{% import "/includes/_imageSection.html" as sections %}
+
+{% block content %}
+    {% include "/components/_image-title.html" %}
+    <div class="container">
+        <div class="committee-title">
+            {{ title.sectionTitle(committee_title.title) }}
+        </div>
+        {% include "/components/_committee-rol.html" %}
+        {{ title.sectionTitle("Consejo de administración") }}
+        {% include "/components/_management.html" %}
+        {{ title.sectionTitle('Notas de prensa') }}
+        {% include "/components/_home-news.html" %}
+    </div>
+    <div class="hidden-xs mgt-50  mgb-120">
+        {{ sections.imageSection(model) }}
+    </div>
+{% endblock %}

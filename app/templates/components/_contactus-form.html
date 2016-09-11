@@ -1,0 +1,63 @@
+<!-- contactus form -->
+<form>
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-md-9 col-lg-8">
+            <div class="form-group">
+                <label for="subject" class="required">Asunto</label>
+                <select id="subject" class="form-control selectpicker-form">
+                    <option>Encontrar un supermercado</option>
+                    <option>option 2</option>
+                    <option>option 3</option>
+                    <option>option 4</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message" class="required">Escribe mensaje</label>
+                <textarea id="message" class="form-control noresize" rows="4" placeholder="Escribe aquí"></textarea>
+            </div>
+            <fieldset>
+                <legend><span class="required title">Datos de contacto:</span> <span class="info">(escoja el medio por el que quiere que le contactemos)</span></legend>
+                <div class="form-group">
+                    <label for="name">Nombre y apellidos</label>
+                    <input id="name" type="text" class="form-control" />
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 form-group">
+                        <label for="email">e-mail</label>
+                        <input id="email" type="text" class="form-control" />
+                    </div>
+                    <div class="col-xs-12 col-sm-6 form-group">
+                        <label for="phone">Teléfono</label>
+                        <input id="phone" type="text" class="form-control" />
+                    </div>
+                </div>
+            </fieldset>
+            <!-- EXT google recaptcha -->
+            <div class="g-recaptcha" data-sitekey="6LcRNSgTAAAAAHocVvJaE5JaPMLpGgVk78OHxIIx"></div>
+            <!-- EO EXT google recaptcha -->
+            <p class="checkbox-info">Es necesario que leas la política de privacidad y autorices el envío de tus datos</p>
+            <div class="box-form">
+                <p>Si rellena estos campos, sus datos serán incorporados junto a los que se deriven de la tramitación de su solicitud, incluidos en su caso datos de salud a un fichero titularidad de MERCADONA, S.A. con domicilio en C/ Valencia nº 5, 46016 - Tavernes Blanques (Valencia), con el fin de gestionar la respuesta a su petición y en su caso gestionar sus facturas, Si rellena estos campos, sus datos serán incorporados junto a los que se deriven de la tramitación de su solicitud, incluidos en su caso datos de salud a un fichero titularidad de….</p>
+            </div>
+            <div class="checkbox">
+                <label for="readme-accept">
+                    <input type="checkbox" id="readme-accept" value="option1" aria-label="..." class="input-lg" />
+                    <span class="cr"><span class="cr-icon glyphicon glyphicon-ok"></span></span>
+                    <span class="required text">Soy mayor de 14 años y he leído y acepto la Política de Confidencialidad y Protección de Datos</span>
+                </label>
+            </div>
+            <div class="checkbox">
+                <label for="authorization">
+                    <input type="checkbox" id="authorization" value="option1" aria-label="..." />
+                    <span class="cr"><span class="cr-icon glyphicon glyphicon-ok"></span></span>
+                    <span class="required text">Autorizo a que mis datos se utilicen para informarme de productos y servicios, incluido por vía electrónica</span>
+                </label>
+            </div>
+            <div class="text-right">
+                <button type="submit" class="btn-rounded-orange btn-big btn-form-sumbit">Enviar</button>
+                <p class="required-info"><span class="required-l">Campos obligatorios</span></p>
+            </div>
+        </div>
+    </div>
+</form>
+<!-- EO contactus form -->

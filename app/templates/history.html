@@ -1,0 +1,15 @@
+{% extends "/base/_base.html" %}
+{% import "/includes/_imageSection.html" as sections %}
+
+{% block content %}
+    {% include "/components/_image-title.html" %}
+    <div class="container">
+        {% include "/components/_timeline.html" %}
+    </div>
+    <div class="hidden-xs">
+        {{ sections.imageSection(model) }}
+    </div>
+    <div class="container hidden-xs">
+        {% include "/components/_known-news.html" %}
+    </div>
+{% endblock %}
