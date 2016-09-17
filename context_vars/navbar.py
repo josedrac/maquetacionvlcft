@@ -2,119 +2,63 @@ def get_navbar():
     return {
         "main_navigation" : [
             {
-                "name"      : "Conócenos",
+                "name"      : "Valencia Food tours",
                 "id"        : "known",
                 "link"      : "known.html",
                 "rel"       : "Go to...",
                 "submenu"   : [
                     {
-                        "name" : "Conócenos",
+                        "name" : "Food tour",
                         "link" : "known.html"
                     },
                     {
-                        "name" : "Historia",
+                        "name" : "Tapas tour",
+                        "link" : "history.html",
+                        "id"   : "foodtour"
+                    },
+                    {
+                        "name" : "Cabanyal tour",
                         "link" : "history.html",
                         "id"   : "history"
                     },
                     {
-                        "name" : "Organización",
-                        "link" : "committee.html",
-                        "id"   : "committee"
-                    },
-                    {
-                        "name" : "Modelo",
-                        "link" : "model.html",
-                        "id"   : "model"
-                    },
-                    {
-                        "name" : "Servicios",
-                        "link" : "services.html",
-                        "id"   : "service"
-                    },
-                    {
-                        "name"  : "Prensa",
-                        "link"  : "press.html",
-                        "id"    : "press",
-                    },
-                    {
-                        "name" : "Empleo",
-                        "link" : "jobs.html",
-                        "id"   : "job"
-                    },
-                    {
-                        "name" : "Tarjeta Mercadona",
-                        "link" : "card.html",
-                        "id"   : "card"
-                    },
-                    {
-                        "name" : "Factura Online",
-                        "link" : "invoice.html",
-                        "id"   : "invoice"
+                        "name" : "Private tour",
+                        "link" : "history.html",
+                        "id"   : "history2"
                     }
                 ]
             },
             {
-                "name"  : "Supermercados",
+                "name"  : "Eating guide",
                 "id"    : "supermarket",
                 "link"  : "supermarket.html"
             },
             {
-                "name"  : "Consejos",
-                "id"    : "tips",
-                "link"  : "tips.html",
-                "submenu"   : [
-                    {
-                        "name" : "Consejos",
-                        "link" : "#",
-                    },
-                    {
-                        "name" : "Perfumeria",
-                        "link" : "#",
-                        "id"   : "perfumery"
-                    },
-                    {
-                        "name" : "Alimentación",
-                        "link" : "#",
-                        "id"   : "feeding"
-                    },
-                    {
-                        "name" : "Hogar",
-                        "link" : "#",
-                        "id"   : "home"
-                    },
-                    {
-                        "name" : "Mascotas",
-                        "link" : "pets.html",
-                        "id"   : "pets"
-                    }
-                ]
+                "name"  : "About me",
+                "id"    : "supermarket",
+                "link"  : "supermarket.html"
             },
             {
-                "name" : "Actualidad",
-                "link" : "news.html",
-                "id"   : "news"
+                "name"  : "Delicious Valencia Blog",
+                "id"    : "supermarket",
+                "link"  : "supermarket.html"
             },
             {
-                "name"  : "Atención al cliente",
-                "id"    : "support",
-                "link"  : "support.html",
-                "submenu"   : [
-                    {
-                        "name" : "Atención al cliente",
-                        "link" : "#"
-                    },
-                    {
-                        "name" : "Formulario de contacto",
-                        "link" : "contactus.html",
-                        "id"   : "formulary"
-                    },
-                    {
-                        "name" : "Preguntas frecuentes",
-                        "link" : "questions.html",
-                        "id"   : "questions"
-                    }
-                ]
+                "name"  : "Calendar",
+                "id"    : "supermarket",
+                "link"  : "supermarket.html"
+            },
+            {
+                "name"  : "FAQ",
+                "id"    : "supermarket",
+                "link"  : "supermarket.html"
+            },
+            {
+                "name"  : "Contact",
+                "id"    : "supermarket",
+                "link"  : "supermarket.html"
             }
+
         ]
 
     }
