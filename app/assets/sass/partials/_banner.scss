@@ -12,9 +12,16 @@
         width: 100%;
         text-align: center;
     }
+    h2 {
+        font-family: $fontFamily-aux;
+        font-size: 45px;
+        text-transform: uppercase;
+        color: $colorWhite;
+        margin-bottom: 30px;
+    }
     p {
-        font-family: $fontFamily-roboto;
-        font-size: 2.86em;
+        font-family: $fontFamily-aux;
+        font-size: 41px;
         color: $colorWhite;
         margin-bottom: 0;
     }
@@ -27,30 +34,24 @@
         display: inline-block;
         margin-left: auto;
         margin-right: auto;
-        .input-group .search {
-            @include border-left-radius(100px);
-        }
     }
     button, .input-group {
-        font-family: $fontFamily-roboto;
+        font-family: $fontFamily-aux;
         font-size: 1.15em;
     }
     button {
         font-weight: bold;
     }
     .input-rounded-group-addon {
-        background-color: $colorGold-300;
-        &:hover {
-            background-color: $colorGreen-300;
-        }
+        background-color: $colorOrange-500;
     }
     .icon-input {
         font-size: 20px;
         color: $colorWhite;
     }
     .icon-search {
-        font-size: 20px;
-        vertical-align: text-bottom;
+        font-size: 25px;
+        vertical-align: bottom;
         margin-right: 5px;
     }
     @media (min-width: $screen-tablet) {

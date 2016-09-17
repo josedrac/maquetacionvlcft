@@ -1,0 +1,37 @@
+.block-testimonials {
+    padding: 40px 0;
+    .testimonial-box {
+        h3 {
+            text-align: left;
+            margin-bottom: 30px;
+            a,
+            a:hover {
+                color: $colorGrey-500;
+                text-align: left;
+                font-size: 23px;
+            }
+        }
+        .testimonial-avatar {
+            float:left;
+            margin-right: 15px;
+            img {
+                border-radius: 100%;
+            }
+        }
+        .testimonial-sign {
+            font-size: 13px;
+            text-align: left;
+            p {
+                font-size: 13px;
+                line-height: 15px;
+            }
+            .tripadvisor {
+                width:100px;
+            }
+            a,
+            a:hover {
+                color: $colorGrey-600;
+            }
+        }
+    }
+}

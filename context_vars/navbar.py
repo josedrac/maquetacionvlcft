@@ -2,63 +2,53 @@ def get_navbar():
     return {
         "main_navigation" : [
             {
-                "name"      : "Valencia Food tours",
-                "id"        : "known",
+                "name"      : "Food Tours",
+                "id"        : "Food Tours",
                 "link"      : "known.html",
                 "rel"       : "Go to...",
                 "submenu"   : [
                     {
-                        "name" : "Food tour",
-                        "link" : "known.html"
-                    },
-                    {
-                        "name" : "Tapas tour",
-                        "link" : "history.html",
-                        "id"   : "foodtour"
-                    },
-                    {
-                        "name" : "Cabanyal tour",
-                        "link" : "history.html",
-                        "id"   : "history"
-                    },
-                    {
-                        "name" : "Private tour",
-                        "link" : "history.html",
-                        "id"   : "history2"
+                        "name" : "Tapas Tour",
+                        "link" : "known.html",
+                        "rel"  : "Go to..."
                     }
                 ]
             },
             {
-                "name"  : "Eating guide",
-                "id"    : "supermarket",
-                "link"  : "supermarket.html"
+                "name"  : "Eating Guide",
+                "id"    : "eatingGuide",
+                "link"  : "supermarket.html",
+                "rel"   : "Go to..."
             },
             {
                 "name"  : "About me",
-                "id"    : "supermarket",
-                "link"  : "supermarket.html"
+                "id"    : "aboutMe",
+                "link"  : "tips.html",
+                "rel"   : "Go to..."
             },
             {
-                "name"  : "Delicious Valencia Blog",
-                "id"    : "supermarket",
-                "link"  : "supermarket.html"
+                "name"  : "Blog",
+                "id"    : "blog",
+                "link"  : "press.html",
+                "rel"   : "Go to..."
             },
             {
                 "name"  : "Calendar",
-                "id"    : "supermarket",
-                "link"  : "supermarket.html"
+                "id"    : "calendar",
+                "link"  : "support.html",
+                "rel"   : "Go to..."
             },
             {
                 "name"  : "FAQ",
-                "id"    : "supermarket",
-                "link"  : "supermarket.html"
+                "id"    : "faq",
+                "link"  : "support.html",
+                "rel"   : "Go to..."
             },
             {
                 "name"  : "Contact",
-                "id"    : "supermarket",
-                "link"  : "supermarket.html"
+                "id"    : "contact",
+                "link"  : "support.html",
+                "rel"   : "Go to..."
             }
-
         ]
-
     }

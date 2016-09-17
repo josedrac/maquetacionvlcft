@@ -6,11 +6,8 @@
         margin-right: 35px;
         a {
             color: $colorGrey-300;
-            span {
-                font-size: 1.5em;
-            }
             &.active {
-                color: $colorGreen-300;
+                color: $colorGreen-500;
             }
             &:first-child() {
                 margin-right: 20px;

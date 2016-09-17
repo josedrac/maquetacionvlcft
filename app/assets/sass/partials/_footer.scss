@@ -1,5 +1,5 @@
 .footer-mercadona {
-    font-family: $fontFamily-roboto;
+    font-family: $fontFamily-aux;
     background: $color-footer-background;
     padding-top: 70px;
     padding-bottom: 20px;
@@ -97,18 +97,14 @@
     .footer-menu-list {
         float: right;
     }
-
 }
 
 @media(min-width: $screen-tablet) {
     .footer-menu-group .footer-menu-item .collapse {
-        display: inherit;
+        display: initial;
     }
     .footer-copyright-group {
-        font-size: 0.8572em;
-    }
-    .footer-mercadona .title a {
-        cursor: text;
+        font-size: 00.8572em;
     }
     .footer-menu-hover, .footer-menu-list {
         a {
@@ -132,9 +128,6 @@
 }
 
 @media(max-width: $screen-xs-max) {
-    .footer-mercadona {
-        padding-top: 40px;
-    }
     .footer-menu-group {
         margin-bottom: 20px;
         .title {
@@ -150,23 +143,7 @@
             margin-bottom: 15px;
         }
         .call-menu {
-            margin-top: 60px;
-            a {
-                margin: 0;
-                font-size: 1.1429em;
-            }
-            .title {
-                padding-right: 15px;
-                a {
-                    cursor: text;
-                }
-            }
-            .footer-menu {
-                padding-top: 2px;
-            }
-            .title, .footer-menu {
-                float: left;
-            }
+            margin-top: 20px;
         }
     }
     .footer-menu-border {
@@ -195,15 +172,7 @@
         }
     }
     .footer-copyright {
-        .copyright-definition {
-            display: block;
-        }
         margin-top: 20px;
         font-size: 0.8572em;
-    }
-    .footer-copyright-group {
-        .footer-menu-list {
-            font-weight: normal;
-        }
     }
 }

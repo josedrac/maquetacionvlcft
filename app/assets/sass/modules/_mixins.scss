@@ -9,30 +9,6 @@
           #{$property}: #{$value};
 }
 
-@mixin alpha-attribute($attribute, $color, $background) {
-  $percent: alpha($color) * 100%;
-  $opaque: opacify($color, 1);
-  $solid-color: mix($opaque, $background, $percent);
-  #{$attribute}: $solid-color;
-  #{$attribute}: $color;
-}
-
-@mixin placeholder-font($font, $weight: normal) {
-    // Firefox
-    &::-moz-placeholder {
-        font-family: $font;
-        font-weight: $weight;
-    }
-    &:-ms-input-placeholder {
-        font-family: $font;
-        font-weight: $weight;
-    } // Internet Explorer 10+
-    &::-webkit-input-placeholder {
-        font-family: $font;
-        font-weight: $weight;
-    } // Safari and Chrome
-}
-
 @mixin clear-list ($display: block) {
     padding-left: 0;
     margin-bottom: 0;
@@ -80,20 +56,17 @@
 }
 
 @mixin vertical-align($position: relative) {
-    @include translate(0, -50%);
     position: $position;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 @mixin horizontal-align($position: relative) {
-    @include translate(-50%, 0);
     position: $position;
     left: 50%;
-}
-
-@mixin center-align($position: relative) {
-    @include translate(-50%, -50%);
-    position: $position;
-    left: 50%;
-    top: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
 }

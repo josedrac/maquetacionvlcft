@@ -3,23 +3,17 @@ $bootstrap-sass-asset-helper: false !default;
 // // Variables
 // // --------------------------------------------------
 
+
 // //== Colors
 // //
 // //## Gray and brand colors for use across Bootstrap.
 
-// $gray-base:              #000 !default;
-// $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
-// $gray-dark:              lighten($gray-base, 20%) !default;   // #333
-// $gray:                   lighten($gray-base, 33.5%) !default; // #555
-// $gray-light:             lighten($gray-base, 46.7%) !default; // #777
-// $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
-
 $gray-base:              #000 !default;
-$gray-darker:            $colorGrey-600 !default;
-$gray-dark:              $colorGrey-500 !default;
-$gray:                   $colorGrey-400 !default;
-$gray-light:             $colorGrey-300 !default;
-$gray-lighter:           $colorGrey-200 !default;
+$gray-darker:            $colorGrey-700 !default; // #222222
+$gray-dark:              $colorGrey-600 !default;   // #3d3d3d
+$gray:                   $colorGrey-500 !default; // #545454
+$gray-light:             $colorGrey-400 !default; // #a0a0a0
+$gray-lighter:           $colorGrey-300 !default; // #e4e8ea
 
 // $brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
 // $brand-success:         #5cb85c !default;
@@ -27,11 +21,12 @@ $gray-lighter:           $colorGrey-200 !default;
 // $brand-warning:         #f0ad4e !default;
 // $brand-danger:          #d9534f !default;
 
-$brand-primary:         $colorGreen-300 !default;
-$brand-success:         $colorGold-300 !default;
-$brand-info:            $colorGold-300 !default;
-$brand-warning:         $colorGold-300 !default;
-$brand-danger:          $colorRed-300 !default;
+$brand-primary:         $colorGreen-300 !default; // #62a5a1
+$brand-success:         $colorOrange-500 !default; // #B08B33
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
 
 // //== Scaffolding
 // //
@@ -40,14 +35,11 @@ $brand-danger:          $colorRed-300 !default;
 // //** Background color for `<body>`.
 // $body-bg:               #fff !default;
 // //** Global text color on `<body>`.
-// $text-color:            $gray-dark !default;
-
-// //** Global text color on `<body>`.
 $text-color:            $gray !default;
 // //** Global textual link color.
 $link-color:            $colorGreen-300 !default;
 // //** Link hover color set via `darken()` function.
-$link-hover-color:      $colorGold-300 !default; //
+$link-hover-color:      $colorGold-400 !default; //
 // //** Link hover decoration.
 $link-hover-decoration: none !default;
 
@@ -56,15 +48,13 @@ $link-hover-decoration: none !default;
 // //
 // //## Font, line-height, and color for body text, headings, and more.
 
-// $font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:  Arial, sans-serif !default;
 // $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 // //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 // $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-sans-serif:  Arial, sans-serif !default;
-
 $font-family-base:        $font-family-sans-serif;
 
-$font-size-base:          16px !default;
+$font-size-base:          18px !default;
 $font-size-large:         $font-size-base;
 // $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 // $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
@@ -96,7 +86,7 @@ $font-size-large:         $font-size-base;
 
 // [converter] If $bootstrap-sass-asset-helper if used, provide path relative to the assets load path.
 // [converter] This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
-$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/bootstrap/") !default;
+$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "fonts/bootstrap/") !default;
 
 // //** File name for all font files.
 // $icon-font-name:          "glyphicons-halflings-regular" !default;
@@ -207,7 +197,7 @@ $border-radius-small:       3px !default;
 // $input-bg-disabled:              $gray-lighter !default;
 
 // //** Text color for `<input>`s
-$input-color:                    $colorGrey-500;
+// $input-color:                    $gray !default;
 // //** `<input>` border color
 // $input-border:                   #ccc !default;
 
@@ -221,13 +211,13 @@ $input-color:                    $colorGrey-500;
 // $input-border-radius-small:      $border-radius-small !default;
 
 // //** Border color for inputs on focus
-$input-border-focus:             $colorGreen-300;
+// $input-border-focus:             #66afe9 !default;
 
 // //** Placeholder text color
-$input-color-placeholder:        $colorGrey-500;
+// $input-color-placeholder:        #999 !default;
 
 // //** Default `.form-control` height
-$input-height-base:              44px;
+// $input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 2) !default;
 // //** Large `.form-control` height
 // $input-height-large:             (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2) !default;
 // //** Small `.form-control` height

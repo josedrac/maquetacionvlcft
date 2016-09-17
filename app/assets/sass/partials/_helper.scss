@@ -2,14 +2,6 @@
     outline: 0!important;
 }
 
-.text-right {
-    text-align: right;
-}
-
-.bb-0 {
-    border-bottom: 0;
-}
-
 .mgt-30 {
     margin-top: 30px;
 }
@@ -22,36 +14,7 @@
     margin-top: 70px;
 }
 
-.mgt-100 {
-    margin-top: 100px;
-}
-
-.mgb-50 {
-    margin-bottom: 50px;
-}
-
-.mgb-90 {
-    margin-bottom: 90px;
-}
-
-.mgb-100 {
-    margin-bottom: 100px;
-}
-
-.mgb-110 {
-    margin-bottom: 110px;
-}
-
-.mgb-120 {
-    margin-bottom: 120px;
-}
-
-@media(min-width: $screen-tablet) {
-    .mgt-sm-100 {
-        margin-top: 100px;
-    }
-
-    .mgb-sm-100 {
-        margin-bottom: 100px;
-    }
+.text-center,
+.aling-center {
+  text-align: center;
 }

@@ -1,17 +1,11 @@
-.text-box-group {
-    @media (min-width: $screen-tablet) {
-        margin-top: 90px;
-        border: 1px solid $colorGrey-300;
-    }
-}
 .text-box {
     overflow: hidden;
     position: relative;
     &.text-box-bg {
-        background-color: $colorGreen-300;
+        background-color: $colorGreen-500;
         color: $colorWhite;
     }
-    h2 {
+    h1 {
         text-align: center;
         font-size: 2.5em;
         font-weight: bold;
@@ -34,7 +28,7 @@
         border-left: 30px solid $colorWhite;
     }
     .arrow-left {
-        border-right: 30px solid $colorGreen-300;
+        border-right: 30px solid $colorGreen-500;
     }
     .arrow-down {
         @include horizontal-align(absolute);
@@ -42,13 +36,16 @@
         border-right: 15px solid $colorTransparent;
         border-top: 30px solid $colorWhite;
         &.arrow-bg {
-            border-top-color: $colorGreen-300;
+            border-top-color: $colorGreen-500;
         }
     }
 
     @media (min-width: $screen-tablet) {
         img {
             width: 100%;
+        }
+        p {
+             font-size: 1.29em;
         }
         .arrow-right, .arrow-left {
             @include vertical-align(absolute);
@@ -79,12 +76,6 @@
             left: 0;
         }
     }
-    @media (min-width: $screen-desktop) {
-        p {
-             font-size: 1.29em;
-        }
-    }
-
     @media (max-width: $screen-xs-max) {
         @include make-row;
         .container-image, .container-text {
@@ -93,7 +84,7 @@
         .container-text {
             position: relative;
             min-height: 400px;
-            max-width: 600px;
+            max-width: 400px;
             width: 100%;
             margin-right: auto;
             margin-left: auto;

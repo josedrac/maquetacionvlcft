@@ -1,19 +1,16 @@
 .header {
-    font-family: $fontFamily-roboto;
-    background-color: $color-header-bg;
-
+    font-family: $fontFamily-aux;
     .top {
         text-align: right;
     }
-
     .header-logo {
         padding: 10px 0 18px;
         .launcher-menu-mobil {
-            background: $colorGold-300;
+            background: $colorGreen-300;
             color: $colorWhite;
             text-align: center;
             padding: 14px 0;
-            .nav-phone-launch {
+            i {
                 font-size: 2.5em;
             }
             .launcher-text {
@@ -23,7 +20,7 @@
         .logo {
             img {
                 width: 100%;
-                max-width: 400px;
+                max-width: 450px;
             }
             @media(max-width: $screen-xs-max) {
                 text-align: center;
@@ -32,40 +29,11 @@
                 }
             }
         }
-
-
-
         .buy-button {
-            font-size: 1.08em;
-            span {
-                font-weight: bold;
-                margin-right: 5px;
-            }
+            font-size: 1em;
         }
         @media(max-width: $screen-xs-max) {
-            display: block;
-            position: relative;
-            height: 70px;
-            padding: 0;
-            .header-phone {
-                height: 100%;
-                background-color: $colorWhite;
-                padding-right: 0;
-            }
-            .launcher-menu-mobil {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 70px;
-                height: 70px;
-                padding: 10px;
-                background: $colorGold-300;
-            }
-            .logo {
-                padding: 7px 0 0 70px;
-                height: 100%;
-                @include alpha-attribute('background-color', rgba($color-navbar-bg, 0.9), $color-navbar-bg);
-            }
+            background-color: $colorGreen-300;
         }
     }
 
@@ -114,76 +82,5 @@
             }
         }
     }
-}
-.languages-menu {
-    color: $color-header-text-top;
-    position: relative;
-    display: inline-block;
-    .separator {
-        padding: 0 5px;
-    }
-    li {
-        font-family: $fontFamily-roboto;
-    }
-    .dropdown-menu {
-        @include animation-duration(.3s);
-    }
-    .dropdown-header {
-        color: $colorGrey-400;
-        font-weight: 500;
-    }
-    a, button.btn {
-        color: $color-header-text-top;
-        padding: 0;
-        background: $colorTransparent;
-        font-size: .855em;
-        &:hover, &:focus {
-            color: $color-header-text-top;
-        }
-    }
-    .filter-option {
-        .text-muted {
-            font-size: 1em;
-            float: left;
-            padding-right: 4px;
-        }
-    }
-    .btn-group.open .dropdown-toggle {
-        box-shadow: none;
-    }
-    .dropdown-menu {
-        @include border-radius(0);
-        .divider {
-            margin: 5px 0;
-        }
-        .text-muted {
-            display: none;
-        }
-        ul {
-            padding: 0 15px;
-            li a {
-                color: $color-header-text-top;
-                font-size: 0.82em;
-            }
-            .dropdown-header {
-                padding-top: 5px;
-            }
-        }
-    }
-    .bootstrap-select {
-        &.open .bs-caret::before {
-            content: "\f106";
-        }
-        .bs-caret {
-            @include vertical-align(absolute);
-            font-family: $fontFamily-fontAwesome;
-            right: 12px;
-            &::before {
-                content: "\f107";
-            }
-        }
-        .caret {
-            display: none;
-        }
-    }
+
 }

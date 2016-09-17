@@ -1,6 +1,20 @@
 @import "bower_components/roboto-fontface/css/roboto/sass/roboto-fontface";
 
 @font-face {
+  font-family: 'sfbp';
+  src: url('../fonts/sfbp/sfbp.eot');
+  src: url('../fonts/sfbp/sfbp.woff2') format('woff2'),
+       url('../fonts/sfbp/sfbp.woff') format('woff'),
+       url('../fonts/sfbp/sfbp.ttf') format('truetype'),
+       url('../fonts/sfbp/sfbp.svg#sfbp') format('svg'),
+       url('../fonts/sfbp/sfbp.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
   font-family: 'DroidSerif';
   src: url('../fonts/droid/DroidSerif.eot');
   src: url('../fonts/droid/DroidSerif.woff2') format('woff2'),
@@ -46,15 +60,4 @@
        url('../fonts/droid/DroidSerif-BoldItalic.eot?#iefix') format('embedded-opentype');
   font-weight: bold;
   font-style: italic;
-}
-
-@font-face {
-  font-family: 'FontMercadona';
-  src:  url('../fonts/icon-mercadona/FontMercadona.eot?xsbixv');
-  src:  url('../fonts/icon-mercadona//FontMercadona.eot?xsbixv#iefix') format('embedded-opentype'),
-        url('../fonts/icon-mercadona//FontMercadona.ttf?xsbixv') format('truetype'),
-        url('../fonts/icon-mercadona//FontMercadona.woff?xsbixv') format('woff'),
-        url('../fonts/icon-mercadona//FontMercadona.svg?xsbixv#FontMercadona') format('svg');
-  font-weight: normal;
-  font-style: normal;
 }

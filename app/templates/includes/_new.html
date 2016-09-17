@@ -1,11 +1,30 @@
 {% import "/includes/_tags.html" as macroTag %}
-<section class="news col-xs-12 col-sm-6 col-lg-4 wow fadeInUp">
+<!-- <div class="container">
+    <section class="primary-title">
+        <h2 class="title">
+            {{ title }}
+        </h2>
+        <a class="link hidden-xs" href="{{ link }}">
+            {{ linkTitle }}
+        </a>
+        <a class="link arrow visible-xs" href="{{ link }}">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </a>
+    </section>
+</div> -->
+
+<section class="actuality col-xs-12 col-sm-6 col-lg-3">
     <div class="content">
         <div class="img-content">
-            <img src="{{ elem.img }}" alt="..." />
+            <img class="" src="{{ elem.img }}" alt="..." />
         </div>
         <div class="content-new">
-            <h2 class="title"><a href="{{ elem.link }}">{{ elem.title }}</a></h2>
+            <a class="title" href="{{ elem.link }}" rel="...">{{ elem.title }}</a>
+            {% if elem.desc %}
+            <div class="description hidden-xs">
+                <p>{{ elem.desc }}</p>
+            </div>
+            {% endif %}
             <div class="content-list">
                 <div class="date">
                     {{ elem.date }}
@@ -16,11 +35,6 @@
                 </div>
                 {% endif %}
             </div>
-            {% if elem.desc %}
-            <div class="description hidden-xs">
-                <p>{{ elem.desc }}</p>
-            </div>
-            {% endif %}
         </div>
     </div>
     {% if elem.tags %}

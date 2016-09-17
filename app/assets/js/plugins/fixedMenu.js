@@ -1,11 +1,9 @@
 var fixedMenu = function($) {
-    $(window).scroll(function () {
-        var nav = $('.nav-content');
-        var content = $('.contents');
-        var pos = content.offset().top - nav.height();
-        var isScrollDownOfNav = $(this).scrollTop() > pos;
+    var pos = $('.nav-content').offset().top;
+    var nav = $('.nav-content');
 
-        if (isScrollDownOfNav) {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > pos) {
             nav.addClass('navbar-fixed-top');
         } else {
             nav.removeClass('navbar-fixed-top');

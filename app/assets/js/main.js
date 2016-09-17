@@ -6,8 +6,6 @@ jQuery(document).ready(function($) {
         navPhone($);
         footerMenu($);
         gridList($);
-        animationWow($);
-        timeline($);
-        cookies($);
         hideMenu($);
+        animationWow($);
     });

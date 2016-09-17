@@ -1,21 +1,17 @@
 $roboto-font-path: '../fonts';
+$fontFamily-aux: 'Roboto';
 
-$fontFamily-roboto: 'Roboto';
-$fontFamily-droidSerif: 'DroidSerif';
+// $fontFamily-droidSerif: 'DroidSerif';
 $fontFamily-fontAwesome: 'FontAwesome';
-$fontFamily-mercadona: 'FontMercadona';
 
 $color-footer-text: $colorWhite;
 $color-footer-background: $colorGreen-300;
 
-$color-navbar-bg: $colorBlack-300;
-$color-navbar-hover-bg: $colorGreen-400;
-$color-navbar-text: $colorGold-300;
-$color-navbar-submenu-bg: $colorGreen-400;
-$color-navbar-submenu-text-hover: $colorGold-300;
-
-
-$color-header-bg: $colorBlack-300;
+$color-navbar-bg: $colorGreen-300;
+$color-navbar-hover-bg: $colorGreen-500;
+$color-navbar-text: $colorWhite;
+$color-navbar-submenu-bg: $colorGreen-500;
 $color-header-text-top: $colorGrey-400;
+//$color-header-button: $colorOrange-500;
 
-$color-new-text-title: $colorGold-300;
+$color-new-text-title: $colorGreen-300;

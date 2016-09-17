@@ -1,18 +1,10 @@
 {% extends "/base/_base.html" %}
 {% import "/components/_text-box.html" as box %}
-{% import "/includes/_title.html" as title %}
 
 {% block content %}
     {% include "/components/_image-title.html" %}
     <div class="container">
-        <div class="paragraph">
-            <p>El modelo de gestión de Mercadona está basado desde 1993 en la Calidad Total. Con este modelo, Mercadona trata de satisfacer con la misma intensidad a los cinco componentes que forman la empresa: “El Jefe” (como Mercadona llama al Cliente), El Trabajador, El Proveedor, La Sociedad y El Capital.</p>
-        </div>
+        <p class="lead">CONTENT PAGE.</p>
         {{ box.textBox(textBox) }}
-        <div class="hidden-xs">
-            {% include "/components/_known-mercadona-grid.html" %}
-        </div>
-        {{ title.sectionTitle('Notas de prensa') }}
-        {% include "/components/_home-news.html" %}
     </div>
 {% endblock %}

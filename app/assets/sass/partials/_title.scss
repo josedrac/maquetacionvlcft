@@ -1,17 +1,53 @@
 .primary-title {
-    text-align: center;
-    font-family: $fontFamily-roboto;
+    @include flexbox();
+    @include justify-content(flex-start);
+    @include align-items(center);
+    font-family: $fontFamily-aux;
     font-weight: bold;
     margin: 20px 0;
     .title {
-        color: $colorGreen-500;
+        color: $colorGreen-300;
         margin: 0;
         font-size: 2em;
     }
+    a {
+        color: $colorGreen-300;
+        font-size: 1.29em;
+        &.arrow {
+            margin-left: 15px;
+            font-size: 2em;
+        }
+    }
     @media(min-width: $screen-tablet) {
         margin: 50px 0;
+        @include justify-content(space-between);
+        @include align-items(flex-end);
         .title {
             font-size: 2.85em;
         }
+    }
+}
+
+h2 {
+    &.section-title {
+        font-size: 26px;
+        font-family: $fontFamily-aux;
+        text-transform: none;
+        color: $colorGold-400;
+        font-weight: 500;
+        margin: 20px 0;
+        border-bottom: 1px solid $colorGrey-200;
+        display: block;
+        padding: 0 0 12px;
+        position: relative;
+        line-height: 20px;
+    }
+    &.section-title:before {
+        background: $colorGreen-300;
+        bottom: -1px;
+        content: "";
+        height: 4px;
+        position: absolute;
+        width: 74px;
     }
 }

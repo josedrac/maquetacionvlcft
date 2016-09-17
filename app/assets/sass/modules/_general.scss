@@ -12,18 +12,12 @@ html, body {
 
 @media(max-width: $screen-xs-max) {
     .webpage {
-        @include transition(left 0.5s ease);
+        @include transition(right 0.5s ease);
         position: relative;
-        left: 0%;
+        right: 0%;
     }
     .nav-phone-open .webpage {
-        left: 100%;
-    }
-    .nav-phone-open {
-        height: 100%;
-        body, .webpage {
-            height: 100%;
-        }
+        right: 100%;
     }
 }
 
@@ -49,14 +43,23 @@ html, body {
 }
 
 .container-list-group {
+    margin-top: 20px;
     @include flexbox();
     @include justify-content(center);
     @include flex-flow(column wrap);
     @media(min-width: $screen-tablet) {
         @include flex-flow(row wrap);
     }
-    @media (max-width: $screen-xs-max) {
-        margin-left: $grid-gutter-width / -2;
-        margin-right: $grid-gutter-width / -2;
-    }
+}
+
+.expanded-container {
+    //max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.snapchat-icon {
+    min-width: 95px;
+    height: auto;
+    margin-bottom: 30px;
 }

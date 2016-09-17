@@ -1,11 +1,11 @@
 .pager {
-    margin: 50px 0 120px;
+    margin: 20px 0 120px;
     li {
         a {
             @include border-radius(5px);
             border-color: $colorGrey-300;
             color: $colorGreen-500;
-            font-family: $fontFamily-roboto;
+            font-family: $fontFamily-aux;
             font-size: 1.15em;
             padding-top: 7px;
             padding-bottom: 7px;
@@ -13,11 +13,8 @@
             width: 45px;
             &.active {
                 color: $colorWhite;
-                background-color: $colorGreen-300;
+                background-color: $colorGreen-400;
                 border: none;
-                &:hover {
-                    background-color: $colorGold-300;
-                }
             }
         }
         &:nth-child(2)  a {
@@ -44,13 +41,11 @@
                 float: left;
                 background: none;
                 color: $colorGreen-500;
-                width: auto;
             }
             &:last-child, &:nth-last-child(2) a {
                 float: right;
                 background: none;
                 color: $colorGreen-500;
-                width: auto;
             }
         }
     }

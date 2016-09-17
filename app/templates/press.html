@@ -1,21 +1,7 @@
 {% extends "/base/_base.html" %}
-{% import "/includes/_title.html" as title %}
 
 {% block content %}
-    {% include "/components/_image-title.html" %}
     <div class="container">
-        <div class="paragraph">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada ultrices orci eu vehicula. Aenean interdum aliquet convallis. Praesent lobortis eleifend nulla, vel pulvinar quam dictum non. Curabitur vel leo arcu. Duis at sapien mollis.
-            </p>
-        </div>
-        {{ title.sectionTitle('Notas de prensa') }}
-        {% include "/components/_press-news.html" %}
+        <p class="lead">CONTENT PAGE.</p>
     </div>
-    {% include "/components/_grid-green.html" %}
-    <div class="container">
-        {{ title.sectionTitle('Actualidad Mercadona') }}
-        {% include "/components/_press-news-all.html" %}
-    </div>
-    {% include "/components/_press-image-banner.html" %}
 {% endblock %}
