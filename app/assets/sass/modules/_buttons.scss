@@ -1,3 +1,18 @@
+.container-buttons-action-center {
+    text-align: center;
+}
+
+.container-buttons-action,
+.container-buttons-action-center {
+    .first-btn {
+        margin-right: 20px;
+    }
+}
+
+.btn {
+    text-transform: uppercase;
+}
+
 .btn-rounded-shop {
     @include btn-custom(4px, $colorGold-300, $colorWhite, $colorWhite);
     padding: 10px 25px;
@@ -51,7 +66,7 @@
 }
 
 .btn-form-sumbit {
-    font-family: $fontFamily-roboto;
+    font-family: $fontFamily-GothamPro;
     font-weight: bold;
     font-size: 1.15em;
     width: 150px;

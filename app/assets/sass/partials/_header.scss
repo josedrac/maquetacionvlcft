@@ -1,5 +1,5 @@
 .header {
-    font-family: $fontFamily-roboto;
+    font-family: $fontFamily-GothamPro;
     background-color: $color-header-bg;
 
     .top {
@@ -123,7 +123,7 @@
         padding: 0 5px;
     }
     li {
-        font-family: $fontFamily-roboto;
+        font-family: $fontFamily-GothamPro;
     }
     .dropdown-menu {
         @include animation-duration(.3s);

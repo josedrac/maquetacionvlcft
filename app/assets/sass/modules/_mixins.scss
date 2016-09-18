@@ -17,6 +17,18 @@
   #{$attribute}: $color;
 }
 
+.transparent-background {
+    background-color: transparent;
+    zoom: 1;
+}
+@mixin transparent($color, $alpha) {
+    $rgba: rgba($color, $alpha);
+    $ie-hex-str: ie-hex-str($rgba);
+    @extend .transparent-background;
+    background-color: $rgba;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+}
+
 @mixin placeholder-font($font, $weight: normal) {
     // Firefox
     &::-moz-placeholder {

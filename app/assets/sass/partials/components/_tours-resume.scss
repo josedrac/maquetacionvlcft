@@ -1,0 +1,114 @@
+.tours-resume > #wrapper {
+    position: relative;
+}
+.tours-resume #wrapper > .main > header {
+    margin-bottom: 0;
+}
+.tours-resume.pattern_bg_home_circle {
+    width: 100%;
+    height: 100%;
+    height: 95%;
+    position: relative;
+    /*  position: absolute;*/
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    display: table;
+        padding-bottom: 50px;
+}
+.tours-resume .tour_nav {
+    display: table-cell;
+    vertical-align: middle;
+}
+.tours-resume .tour_nav ul {
+    list-style: none;
+    margin: 0 auto;
+    display: table;
+    padding-left: 0;
+}
+.tours-resume .tour_nav li {
+    width: 250px;
+    height: 250px;
+    margin-left: 45px;
+    display: table;
+    float: left;
+}
+.tours-resume .tour_nav li a {
+    background-color: #20b1af;
+    background-color: rgba(32, 177, 175, 0.6);
+    text-align: center;
+    padding: 15px;
+    display: table-cell;
+    vertical-align: middle;
+    -webkit-border-radius: 125px;
+    -moz-border-radius: 125px;
+    -ms-border-radius: 125px;
+    -o-border-radius: 125px;
+    border-radius: 125px;
+}
+.tours-resume .tour_nav li a:hover {
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.6);
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+.tours-resume .tour_nav li a:hover h1{
+    color: #d49602;
+}
+.tours-resume .tour_nav li a:hover span.tag {
+    color: #000;
+}
+.tours-resume .tour_nav li h1 {
+    font-size: 44px;
+    color: #fff;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    margin: -5px 0 0;
+    padding: 0;
+}
+.tours-resume .tour_nav li h1 span.tag {
+    font-family: "GandhiSans", Tahoma, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    font-weight: normal;
+    font-style: italic;
+    text-transform: none;
+    letter-spacing: 0;
+    line-height: 22px;
+    padding: 0;
+    margin-bottom: 6px;
+    display: block;
+}
+.tours-resume .tour_nav li h1 span.user_type {
+    margin-bottom: 6px;
+/*    font-size:32px;*/
+}
+.tours-resume .tour_nav li h1:after {
+    display: none;
+}
+.tours-resume .tour_nav li:first-child {
+    margin-left: 0;
+}
+.tours-resume .pattern_bg_home_circle.expanded .tour_nav li {
+    width: 115px;
+    height: 115px;
+    margin-left: 30px;
+}
+.tours-resume .pattern_bg_home_circle.expanded .tour_nav li a.active {
+    background-color: #20b1af;
+    background-color: rgba(32, 177, 175, 0.6);
+}
+.tours-resume .pattern_bg_home_circle.expanded .tour_nav li a.active h1, .tours-resume .pattern_bg_home_circle.expanded .tour_nav li a.active span {
+    color: white;
+}
+.tours-resume .pattern_bg_home_circle.expanded .tour_nav li:first-child {
+    margin-left: 0;
+}
+.tours-resume .pattern_bg_home_circle.expanded .tour_nav h1 {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    margin-top: 0;
+}

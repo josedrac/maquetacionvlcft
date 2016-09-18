@@ -1,19 +1,19 @@
 {% extends "/base/_base.html" %}
-{% import "/includes/_title.html" as title %}
-{% import "/includes/_imageSection.html" as knowUs %}
 
 {% block content %}
     {% include "/components/_carousel.html" %}
+
+    {% include "/components/_tours-resume.html" %}
+
     <div class="container">
-        {{ title.sectionTitle(news_title) }}
-        {% include "/components/_home-news.html" %}
+        {% include "/components/_tour-description.html" %}
     </div>
-    {% include "/components/_nearest.html" %}
-    <div class="container">
-        {{ title.sectionTitle(tips_title) }}
-        {% include "/components/_home-tips.html" %}
-    </div>
-    {{ knowUs.imageSection(know_us) }}
-    {% include "/components/_contact-us.html" %}
-    {% include "/components/_workWithUs.html" %}
+
+    {% include "/components/_block-info-fullsize.html" %}
+
+    {% include "/components/_testimonials.html" %}
+
+
+
+
 {% endblock %}

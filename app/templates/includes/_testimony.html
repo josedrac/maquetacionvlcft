@@ -1,0 +1,15 @@
+{% macro testimonyBlock(testimony) %}
+<!-- testimony element -->
+<div class="testimonial-box">
+    <h3><a href="{{ testimony.url }}" target="_blank"><span class="quote left">“</span>...{{ testimony.text }}...<span class="quote right">”</span></a></h3>
+    <div class="testimonial-avatar">
+        <a href="{{ testimony.url }}" target="_blank"><img class="avatar" src="{{ testimony.avatar }}" width="74" height="74"></a>
+    </div>
+    <div class="testimonial-sign">
+        <p><a href="{{ testimony.url }}" target="_blank">{{ testimony.nick }}</a></p>
+        <p><a href="{{ testimony.url }}" target="_blank">{{ testimony.location }}</a></p>
+        <p><a href="{{ testimony.url }}" target="_blank"><img class="tripadvisor" src="{{ testimony.logo }}" alt="{{ testimony.altlogo }}"></a></p>
+    </div>
+</div>
+<!-- EO testimony element -->
+{% endmacro %}

@@ -1,10 +1,12 @@
 import context_vars.navbar as navbar
+import context_vars.lastTestimonials as lastTestimonials
 
 def get_vars():
     return {
-        'navbar'            : navbar.get_navbar(),
-        'page_name'         : 'home',
-        'news_title'   :'Actualidad Mercadona',
+        'lastTestimonials'   : lastTestimonials.get_lastTestimonials(),
+        'navbar'                : navbar.get_navbar(),
+        'page_name'             : 'home',
+        'news_title'            :'Actualidad Mercadona',
         'news' : [
             {
                 'img'       : 'images/news/new1.png',
