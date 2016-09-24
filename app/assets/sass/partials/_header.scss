@@ -71,19 +71,23 @@
 
     ul.menu-idioma {
         float: right;
-        margin: 5px 0 0 20px;
+        margin: 5px 0 0 0;
         padding: 0px;
         list-style: none;
 
+
         & > li.qts_lang_item {
+			&:first-child {
+				margin-left: 0;
+			}
             padding: 0;
             display: inline;
             position: relative;
             line-height: 10px;
-            margin: 0 10px 0 0;
+            margin: 0 0 0 10px;
             a {
                 font-size: 12px;
-                margin-right: 5px;
+                margin-right: 0;
                 text-transform: uppercase;
                 img {
                     vertical-align: inherit;

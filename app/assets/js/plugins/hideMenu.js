@@ -17,6 +17,7 @@ var hideMenu = function($) {
 
     launcher.mouseenter(function() {
         console.log('over-panelmenu');
+
         var idOpMenu = '#'+this.id;
         var idSubmenu = '#'+this.id.substring(7,this.id.length);
         var isSubmenuVisible = launcher.find(idSubmenu).is(":visible");

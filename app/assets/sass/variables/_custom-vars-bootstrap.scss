@@ -113,6 +113,9 @@ $icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/bootst
 // $padding-large-vertical:    10px !default;
 // $padding-large-horizontal:  16px !default;
 
+$padding-xlarge-vertical:    12px !default;
+$padding-xlarge-horizontal:  22px !default;
+
 // $padding-small-vertical:    5px !default;
 // $padding-small-horizontal:  10px !default;
 
@@ -122,9 +125,9 @@ $icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/bootst
 // $line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
 // $line-height-small:         1.5 !default;
 
-$border-radius-base:        3px !default;
-$border-radius-large:       3px !default;
-$border-radius-small:       3px !default;
+$border-radius-base:        2px !default;
+$border-radius-large:       2px !default;
+$border-radius-small:       2px !default;
 
 // //** Global color for active items (e.g., navs or dropdowns).
 // $component-active-color:    #fff !default;

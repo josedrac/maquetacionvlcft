@@ -1,3 +1,20 @@
+
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-bottom: 0; // For input.btn
+  font-weight: $btn-font-weight;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent;
+  white-space: nowrap;
+  @include button-size(  $padding-xlarge-vertical,   $padding-xlarge-horizontal, $font-size-base - 1, $line-height-base, $btn-border-radius-base);
+  @include user-select(none);
+}
+
 .container-buttons-action-center {
     text-align: center;
 }
@@ -9,17 +26,14 @@
     }
 }
 
-.btn {
-    text-transform: uppercase;
-}
 
-.btn-rounded-shop {
+/*.btn-rounded-shop {
     @include btn-custom(4px, $colorGold-300, $colorWhite, $colorWhite);
     padding: 10px 25px;
     &:hover {
         background-color: $colorGreen-500;
     }
-}
+}*/
 
 .btn-rounded-transparent {
     @include btn-custom(4px, $colorTransparent, $colorWhite, $colorWhite);

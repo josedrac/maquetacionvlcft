@@ -30,7 +30,7 @@
                             <nav>
                                 <ul class="nav navbar-nav">
                                     {% for section in menu.submenu %}
-                                        <li><a class="section-submenu {%if loop.first %}visible-xs{% endif %} {% if section.id == subpage_name %}active{% endif %}" href="{{ section.link }}">{{ section.name }}</a></li>
+                                        <li><a class="section-submenu {% if section.id == subpage_name %}active{% endif %}" href="{{ section.link }}">{{ section.name }}</a></li>
                                     {% endfor %}
                                 </ul>
                             </nav>
@@ -39,6 +39,8 @@
                     {% endif %}
                 </li>
             {% endfor %}
+				<li class="btn-navbar"><a href="" class="btn-primary">CALENDAR</a></li>
+				<li class="btn-navbar last-btn"><a href="" class="btn-success">BOOK NOW</a></li>
         </ul>
         <div class="visible-xs mgt-70">
             <button type="button" class="btn btn-rounded-shop buy-button"><span class="icon-fmd-cart"></span> Compra online</button>

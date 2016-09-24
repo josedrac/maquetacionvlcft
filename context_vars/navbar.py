@@ -3,59 +3,68 @@ def get_navbar():
         "main_navigation" : [
             {
                 "name"      : "Valencia Food tours",
-                "id"        : "known",
                 "link"      : "known.html",
+				"id"        : "known",
                 "rel"       : "Go to...",
                 "submenu"   : [
                     {
-                        "name" : "Food tour",
-                        "link" : "known.html"
+                        "name" : "Tapas, wine & History Tour",
+                        "link" : "known.html",
+						"id"   : "tapas"
                     },
                     {
-                        "name" : "Tapas tour",
+                        "name" : "Cabanyal Foodtour",
                         "link" : "history.html",
                         "id"   : "foodtour"
                     },
                     {
-                        "name" : "Cabanyal tour",
-                        "link" : "history.html",
-                        "id"   : "history"
-                    },
-                    {
                         "name" : "Private tour",
                         "link" : "history.html",
-                        "id"   : "history2"
+                        "id"   : "history"
                     }
                 ]
             },
             {
-                "name"  : "Eating guide",
-                "id"    : "supermarket",
+                "name"  : "Valencia Food Blog",
+                "id"    : "blog",
                 "link"  : "supermarket.html"
             },
             {
-                "name"  : "About me",
-                "id"    : "supermarket",
-                "link"  : "supermarket.html"
+                "name"  : "About",
+                "id"    : "about",
+                "link"  : "supermarket.html",
+				"rel"       : "Go to...",
+                "submenu"   : [
+                    {
+                        "name" : "About me",
+                        "link" : "known.html",
+						"id"   : "aboutme"
+                    },
+                    {
+                        "name" : "FAQ",
+                        "link" : "history.html",
+                        "id"   : "foodtour"
+                    },
+                    {
+                        "name" : "Culinary map",
+                        "link" : "history.html",
+                        "id"   : "culinary"
+                    },
+                    {
+                        "name" : "Jobs",
+                        "link" : "history.html",
+                        "id"   : "jobs"
+                    }
+                ]
             },
             {
-                "name"  : "Delicious Valencia Blog",
-                "id"    : "supermarket",
-                "link"  : "supermarket.html"
-            },
-            {
-                "name"  : "Calendar",
-                "id"    : "supermarket",
-                "link"  : "supermarket.html"
-            },
-            {
-                "name"  : "FAQ",
-                "id"    : "supermarket",
+                "name"  : "Gift cards",
+                "id"    : "giftcards",
                 "link"  : "supermarket.html"
             },
             {
                 "name"  : "Contact",
-                "id"    : "supermarket",
+                "id"    : "contact ",
                 "link"  : "supermarket.html"
             }
 

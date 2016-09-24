@@ -6,7 +6,7 @@
 // $paletteBlue: #059FF5 #39579A;
 
 $paletteBlack:  #404040 #333333 #2a2a2a;
-$paletteGrey:   #f4f4f4 #dddddd #cccccc #949494 #868686 #666666 #545454;
+$paletteGrey:   #f4f4f4 #dddddd #cccccc #949494 #868686 #666666 #545454 #333333;
 $paletteGold:   #e9ca80 #dfb041 #d49602 #a3865b;
 $paletteGreen:  #def3f3 #96d6d9 #79d0cf #62c2c6 #62a5a1 #20b1af #289593;
 $paletteRed:    #FFDFE0 #C89797 #790000;
@@ -27,6 +27,7 @@ $colorGrey-400: nth($paletteGrey, 4);
 $colorGrey-500: nth($paletteGrey, 5);
 $colorGrey-600: nth($paletteGrey, 6);
 $colorGrey-700: nth($paletteGrey, 7);
+$colorGrey-800: nth($paletteGrey, 8);
 
 $colorGold-100: nth($paletteGold, 1);
 $colorGold-200: nth($paletteGold, 2);

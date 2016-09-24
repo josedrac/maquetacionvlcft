@@ -48,6 +48,9 @@
                     color: white;
                 }
             }
+			.btn-navbar {
+				display: none;
+			}
         }
     }
     .sub-menu {
@@ -98,6 +101,32 @@
         a {
             font-size: $text-130;
         }
+		.btn-navbar {
+			margin-right: 10px;
+			display: block;
+			.last-btn {
+				margin-right: 0;
+			}
+			.btn-primary,
+			.btn-success {
+				color: $colorWhite;
+				opacity: 0.6;
+			}
+			.btn-primary {
+				&:hover, &:focus {
+					background-color: darken($btn-primary-bg, 10%);
+					border-color: darken($btn-primary-bg, 10%);
+					opacity: 1;
+				}
+			}
+			.btn-success {
+				&:hover, &:focus {
+					background-color: darken($btn-success-bg, 10%);
+					border-color: darken($btn-success-bg, 10%);
+					opacity: 1;
+				}
+			}
+		}
     }
     .languages-menu {
         color: $color-header-text-top;
