@@ -10,7 +10,7 @@ form {
         padding-right: 5px;
     }
     label {
-        font-family: $fontFamily-roboto;
+        font-family: $fontFamily-GothamPro;
         font-weight: normal;
         color: $colorGrey-600;
     }
@@ -26,6 +26,6 @@ form {
     }
 }
 .checkbox label {
-    font-family: $fontFamily-roboto;
+    font-family: $fontFamily-GothamPro;
     color: $colorGrey-400;
 }

@@ -1,0 +1,56 @@
+//desktop size's
+$text-100: 10px;
+$text-110: 11px;
+$text-120: 12px;
+    $text-130: 13px;
+    $text-140: 14px;
+$text-150: 15px;
+$text-160: 16px;
+    $text-180: 18px;
+$text-220: 22px;
+$text-260: 26px;
+    $text-300: 30px;
+$text-330: 33px;
+$text-340: 34px;
+$text-360: 36px;
+    $text-400: 40px;
+    $text-500: 50px;
+$text-540: 54px;
+
+.text-100 { font-size: $text-100; }
+.text-110 { font-size: $text-110; }
+.text-120 { font-size: $text-120; }
+    .text-130 { font-size: $text-130; }
+    .text-140 { font-size: $text-140; }
+.text-150 { font-size: $text-150; }
+.text-160 { font-size: $text-160; }
+    .text-180 { font-size: $text-180; }
+.text-220 { font-size: $text-220; }
+.text-260 { font-size: $text-260; }
+    .text-300 { font-size: $text-300; }
+.text-330 { font-size: $text-330; }
+.text-340 { font-size: $text-340; }
+.text-360 { font-size: $text-360; }
+    .text-400 { font-size: $text-400; }
+    .text-500 { font-size: $text-500; }
+.text-540 { font-size: $text-540; }
+
+@media (max-width: $screen-xs-max) {
+    .text-100 { font-size: #{$text-100 - 0px}; }
+    .text-110 { font-size: #{$text-110 - 0px}; }
+    .text-120 { font-size: #{$text-120 - 0px}; }
+        .text-130 { font-size: #{$text-130 - 0px}; }
+        .text-140 { font-size: #{$text-140 - 0px}; }
+    .text-150 { font-size: #{$text-150 - 0px}; }
+    .text-160 { font-size: #{$text-160 - 0px}; }
+        .text-180 { font-size: #{$text-180 - 0px}; }
+    .text-220 { font-size: #{$text-220 - 0px}; }
+    .text-260 { font-size: #{$text-260 - 0px}; }
+        .text-300 { font-size: #{$text-300 - 0px}; }
+    .text-330 { font-size: #{$text-330 - 0px}; }
+    .text-340 { font-size: #{$text-340 - 0px}; }
+    .text-360 { font-size: #{$text-360 - 0px}; }
+        .text-400 { font-size: #{$text-400 - 0px}; }
+        .text-500 { font-size: #{$text-500 - 0px}; }
+    .text-540 { font-size: #{$text-540 - 0px}; }
+}

@@ -1,0 +1,44 @@
+.testimonials {
+    padding: 40px 0;
+    a {
+        color: $colorGrey-600;
+        &:hover {
+            color: $colorGold-300;
+        }
+    }
+    .testimonial-box {
+        padding: 10px;
+        h3 {
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-size: $text-180;
+            font-weight: $fontWeight-narrow-medium;
+            line-height: 30px;
+            a {
+                color: $colorGreen-600;
+                &:hover {
+                    color: $colorGold-300;
+                }
+            }
+        }
+        .testimonial-avatar {
+            float:left;
+            margin-right: 15px;
+            img {
+                border-radius: 100%;
+            }
+        }
+        .testimonial-sign {
+            font-size: 13px;
+            text-align: left;
+            p {
+                font-size: 13px;
+                line-height: 15px;
+            }
+            .tripadvisor {
+                width:100px;
+            }
+        }
+    }
+}

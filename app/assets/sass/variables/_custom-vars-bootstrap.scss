@@ -27,7 +27,7 @@ $gray-lighter:           $colorGrey-200 !default;
 // $brand-warning:         #f0ad4e !default;
 // $brand-danger:          #d9534f !default;
 
-$brand-primary:         $colorGreen-300 !default;
+$brand-primary:         $colorGreen-600 !default;
 $brand-success:         $colorGold-300 !default;
 $brand-info:            $colorGold-300 !default;
 $brand-warning:         $colorGold-300 !default;
@@ -43,7 +43,7 @@ $brand-danger:          $colorRed-300 !default;
 // $text-color:            $gray-dark !default;
 
 // //** Global text color on `<body>`.
-$text-color:            $gray !default;
+$text-color:            $colorGrey-600 !default;
 // //** Global textual link color.
 $link-color:            $colorGreen-300 !default;
 // //** Link hover color set via `darken()` function.
@@ -60,9 +60,8 @@ $link-hover-decoration: none !default;
 // $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 // //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 // $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-sans-serif:  Arial, sans-serif !default;
 
-$font-family-base:        $font-family-sans-serif;
+$font-family-base:        $fontFamily-GothamPro;
 
 $font-size-base:          16px !default;
 $font-size-large:         $font-size-base;
@@ -169,13 +168,13 @@ $border-radius-small:       3px !default;
 // $btn-default-bg:                 #fff !default;
 // $btn-default-border:             #ccc !default;
 
-// $btn-primary-color:              #fff !default;
-// $btn-primary-bg:                 $brand-primary !default;
-// $btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+$btn-primary-color:              #fff !default;
+$btn-primary-bg:                 $brand-primary !default;
+$btn-primary-border:             $brand-primary !default;
 
-// $btn-success-color:              #fff !default;
-// $btn-success-bg:                 $brand-success !default;
-// $btn-success-border:             darken($btn-success-bg, 5%) !default;
+$btn-success-color:              #fff !default;
+$btn-success-bg:                 $brand-success !default;
+$btn-success-border:             $brand-success !default;
 
 // $btn-info-color:                 #fff !default;
 // $btn-info-bg:                    $brand-info !default;

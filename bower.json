@@ -1,10 +1,9 @@
 {
-  "name": "mercadona",
+  "name": "deliciousvalenciafoodtour",
   "version": "0.0.1",
-  "homepage": "https://github.com/sopraux/mercadona-web-corporativa",
+  "homepage": "https://github.com/josedrac/maquetacionvlcft",
   "authors": [
-    "Gustavo Lanza Duarte <gustavo.lanza@sopra.com>",
-    "Jacobo Segovia Leon <jacobo.segovia-leon@sopra.com>"
+    "Jose Drac Llorens <jodrallo@gmail.com>"
   ],
   "moduleType": [
     "node"
@@ -26,11 +25,11 @@
     "bootstrap": "3.3.7",
     "bootstrap-sass": "3.3.7",
     "bootstrap-select": "*",
-    "roboto-fontface": "*",
     "sass-flex-mixin": "*",
     "wowjs": "1.1.2",
     "picturefill": "3.0.1",
-    "js-cookie": "^2.1.2"
+    "js-cookie": "^2.1.2",
+    "compass-sass-mixins": "*"
   },
   "dependencies": {
     "modernizr": "components-modernizr#^2.8.3"

@@ -1,0 +1,16 @@
+<!-- testimonials -->
+{% import "/includes/_testimony.html" as testimonyBlock %}
+
+<section class="container testimonials">
+    <h2 class="section-title ">What people are saying about the tour</h2>
+    <div class="row">
+
+        {% for testimony in lastTestimonials.testimonials %}
+        <div class="col-md-4">
+            {{ testimonyBlock.testimonyBlock(testimony) }}
+        </div>
+        {% endfor %}
+
+    </div>
+</section>
+<!-- EO testimonials -->

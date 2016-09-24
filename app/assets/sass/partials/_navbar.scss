@@ -1,5 +1,5 @@
 .nav-content {
-    font-family: $fontFamily-roboto;
+    font-family: $fontFamily-GothamPro;
     background-color: $color-navbar-bg;
     //font-size: 1.2em;
     font-weight: 300;
@@ -41,6 +41,8 @@
             }
             a {
                 color: $color-navbar-text;
+                text-transform: uppercase;
+                font-size: $text-140;
                 &:hover, &:focus {
                     background-color: $colorTransparent;
                     color: white;
@@ -86,11 +88,16 @@
 
         }
     }
-    &.navbar-fixed-top .navbar .nav .logo-fixed {
-        opacity: 1;
-        display: block;
-        width: 120px;
-        height: 45px;;
+    &.navbar-fixed-top .navbar .nav  {
+        .logo-fixed {
+            opacity: 1;
+            display: block;
+            width: 120px;
+            height: 45px;
+        }
+        a {
+            font-size: $text-130;
+        }
     }
     .languages-menu {
         color: $color-header-text-top;

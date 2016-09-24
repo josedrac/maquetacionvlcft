@@ -1,51 +1,133 @@
-@import "bower_components/roboto-fontface/css/roboto/sass/roboto-fontface";
-
 @font-face {
-  font-family: 'DroidSerif';
-  src: url('../fonts/droid/DroidSerif.eot');
-  src: url('../fonts/droid/DroidSerif.woff2') format('woff2'),
-       url('../fonts/droid/DroidSerif.woff') format('woff'),
-       url('../fonts/droid/DroidSerif.ttf') format('truetype'),
-       url('../fonts/droid/DroidSerif.svg#DroidSerif') format('svg'),
-       url('../fonts/droid/DroidSerif.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'GothamPro';
+    src: url('../fonts/GothamPro/GothamPro.eot');
+    src: url('../fonts/GothamPro/GothamPro.woff') format('woff'),
+        url('../fonts/GothamPro/GothamPro.ttf') format('truetype'),
+        url('../fonts/GothamPro/GothamPro.svg#GothamPro') format('svg'),
+        url('../fonts/GothamPro/GothamPro.eot?#iefix') format('embedded-opentype');
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'DroidSerif';
-  src: url('../fonts/droid/DroidSerif-Italic.eot');
-  src: url('../fonts/droid/DroidSerif-Italic.woff2') format('woff2'),
-       url('../fonts/droid/DroidSerif-Italic.woff') format('woff'),
-       url('../fonts/droid/DroidSerif-Italic.ttf') format('truetype'),
-       url('../fonts/droid/DroidSerif-Italic.svg#DroidSerif-Italic') format('svg'),
-       url('../fonts/droid/DroidSerif-Italic.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: italic;
+    font-family: 'GothamPro';
+    src: url('../fonts/GothamPro/GothamProItalic.eot');
+    src: url('../fonts/GothamPro/GothamProItalic.woff') format('woff'),
+        url('../fonts/GothamPro/GothamProItalic.ttf') format('truetype'),
+        url('../fonts/GothamPro/GothamProItalic.svg#GothamProItalic') format('svg'),
+        url('../fonts/GothamPro/GothamProItalic.eot?#iefix') format('embedded-opentype');
+    font-weight: 400;
+    font-style: italic;
 }
 
 @font-face {
-  font-family: 'DroidSerif';
-  src: url('../fonts/droid/DroidSerif-Bold.eot');
-  src: url('../fonts/droid/DroidSerif-Bold.woff2') format('woff2'),
-       url('../fonts/droid/DroidSerif-Bold.woff') format('woff'),
-       url('../fonts/droid/DroidSerif-Bold.ttf') format('truetype'),
-       url('../fonts/droid/DroidSerif-Bold.svg#DroidSerif-Bold') format('svg'),
-       url('../fonts/droid/DroidSerif-Bold.eot?#iefix') format('embedded-opentype');
-  font-weight: bold;
-  font-style: normal;
+    font-family: 'GothamPro';
+    src: url('../fonts/GothamPro/GothamPro-Black.eot');
+    src: url('../fonts/GothamPro/GothamPro-Black.woff') format('woff'),
+        url('../fonts/GothamPro/GothamPro-Black.ttf') format('truetype'),
+        url('../fonts/GothamPro/GothamPro-Black.svg#GothamPro-Black') format('svg'),
+        url('../fonts/GothamPro/GothamPro-Black.eot?#iefix') format('embedded-opentype');
+    font-weight: 900;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'DroidSerif-BoldItalic';
-  src: url('../fonts/droid/DroidSerif-BoldItalic.eot');
-  src: url('../fonts/droid/DroidSerif-BoldItalic.woff2') format('woff2'),
-       url('../fonts/droid/DroidSerif-BoldItalic.woff') format('woff'),
-       url('../fonts/droid/DroidSerif-BoldItalic.ttf') format('truetype'),
-       url('../fonts/droid/DroidSerif-BoldItalic.svg#DroidSerif-BoldItalic') format('svg'),
-       url('../fonts/droid/DroidSerif-BoldItalic.eot?#iefix') format('embedded-opentype');
-  font-weight: bold;
-  font-style: italic;
+    font-family: 'GothamPro';
+    src: url('../fonts/GothamPro/GothamPro-BlackItalic.eot');
+    src: url('../fonts/GothamPro/GothamPro-BlackItalic.woff') format('woff'),
+        url('../fonts/GothamPro/GothamPro-BlackItalic.ttf') format('truetype'),
+        url('../fonts/GothamPro/GothamPro-BlackItalic.svg#GothamPro-BlackItalic') format('svg'),
+        url('../fonts/GothamPro/GothamPro-BlackItalic.eot?#iefix') format('embedded-opentype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GothamPro';
+    src: url('../fonts/GothamPro/GothamPro-Bold.eot');
+    src: url('../fonts/GothamPro/GothamPro-Bold.woff') format('woff'),
+        url('../fonts/GothamPro/GothamPro-Bold.ttf') format('truetype'),
+        url('../fonts/GothamPro/GothamPro-Bold.svg#GothamPro-Bold') format('svg'),
+        url('../fonts/GothamPro/GothamPro-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamPro';
+    src: url('../fonts/GothamPro/GothamPro-BoldItalic.eot');
+    src: url('../fonts/GothamPro/GothamPro-BoldItalic.woff') format('woff'),
+        url('../fonts/GothamPro/GothamPro-BoldItalic.ttf') format('truetype'),
+        url('../fonts/GothamPro/GothamPro-BoldItalic.svg#GothamPro-BoldItalic') format('svg'),
+        url('../fonts/GothamPro/GothamPro-BoldItalic.eot?#iefix') format('embedded-opentype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GothamPro';
+    src: url('../fonts/GothamPro/GothamPro-Light.eot');
+    src: url('../fonts/GothamPro/GothamPro-Light.woff') format('woff'),
+        url('../fonts/GothamPro/GothamPro-Light.ttf') format('truetype'),
+        url('../fonts/GothamPro/GothamPro-Light.svg#GothamPro-Light') format('svg'),
+        url('../fonts/GothamPro/GothamPro-Light.eot?#iefix') format('embedded-opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamPro';
+    src: url('../fonts/GothamPro/GothamPro-LightItalic.eot');
+    src: url('../fonts/GothamPro/GothamPro-LightItalic.woff') format('woff'),
+        url('../fonts/GothamPro/GothamPro-LightItalic.ttf') format('truetype'),
+        url('../fonts/GothamPro/GothamPro-LightItalic.svg#GothamPro-BoldItalic') format('svg'),
+        url('../fonts/GothamPro/GothamPro-LightItalic.eot?#iefix') format('embedded-opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GothamPro';
+    src: url('../fonts/GothamPro/GothamPro-Medium.eot');
+    src: url('../fonts/GothamPro/GothamPro-Medium.woff') format('woff'),
+        url('../fonts/GothamPro/GothamPro-Medium.ttf') format('truetype'),
+        url('../fonts/GothamPro/GothamPro-Medium.svg#GothamPro-Medium') format('svg'),
+        url('../fonts/GothamPro/GothamPro-Medium.eot?#iefix') format('embedded-opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamPro';
+    src: url('../fonts/GothamPro/GothamPro-MediumItalic.eot');
+    src: url('../fonts/GothamPro/GothamPro-MediumItalic.woff') format('woff'),
+        url('../fonts/GothamPro/GothamPro-MediumItalic.ttf') format('truetype'),
+        url('../fonts/GothamPro/GothamPro-MediumItalic.svg#GothamPro-MediumItalic') format('svg'),
+        url('../fonts/GothamPro/GothamPro-MediumItalic.eot?#iefix') format('embedded-opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GothamPro';
+    src: url('../fonts/GothamPro/GothamProNarrow-Bold.eot');
+    src: url('../fonts/GothamPro/GothamProNarrow-Bold.woff') format('woff'),
+        url('../fonts/GothamPro/GothamProNarrow-Bold.ttf') format('truetype'),
+        url('../fonts/GothamPro/GothamProNarrow-Bold.svg#GothamProNarrow-Bold') format('svg'),
+        url('../fonts/GothamPro/GothamProNarrow-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamPro';
+    src: url('../fonts/GothamPro/GothamProNarrow-Medium.eot');
+    src: url('../fonts/GothamPro/GothamProNarrow-Medium.woff') format('woff'),
+        url('../fonts/GothamPro/GothamProNarrow-Medium.ttf') format('truetype'),
+        url('../fonts/GothamPro/GothamProNarrow-Medium.svg#GothamProNarrow-Medium') format('svg'),
+        url('../fonts/GothamPro/GothamProNarrow-Medium.eot?#iefix') format('embedded-opentype');
+    font-weight: 600;
+    font-style: normal;
 }
 
 @font-face {

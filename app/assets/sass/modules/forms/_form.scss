@@ -2,8 +2,8 @@
     margin-bottom: 30px;
 }
 .form-control {
-    @include placeholder-font($fontFamily-roboto, 300);
-    font-family: $fontFamily-roboto;
+    @include placeholder-font($fontFamily-GothamPro, 300);
+    font-family: $fontFamily-GothamPro;
 }
 legend {
     font-size: 1em;
@@ -13,7 +13,7 @@ legend {
         color: $colorGreen-500;
     }
     .info {
-        font-family: $fontFamily-roboto;
+        font-family: $fontFamily-GothamPro;
         color: $colorGrey-400;
     }
 }

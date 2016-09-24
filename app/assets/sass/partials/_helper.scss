@@ -2,8 +2,22 @@
     outline: 0!important;
 }
 
+.inner_wrap {
+    width: 100%;
+    //max-width: 960px;
+}
+
+.inner_wrap {
+    //width: 960px;
+    margin: 0 auto;
+}
+
 .text-right {
     text-align: right;
+}
+
+.align-center {
+    text-align: center;
 }
 
 .bb-0 {

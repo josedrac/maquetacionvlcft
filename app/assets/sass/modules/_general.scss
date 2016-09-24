@@ -5,6 +5,27 @@ html, body {
     overflow-x: hidden;
 }
 
+a {
+    @include transition(all 0.3s ease-in);
+    &:hover {
+        @include transition(all 0.1s ease-out);
+    }
+}
+
+b, strong {
+    font-weight: 800;
+}
+
+p {
+    line-height: $text-300;
+}
+
+.pattern_bg {
+    background: url("../images/inc/pattern_bg.jpg") center top repeat;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
 .vertical-align {
     display: flex;
     align-items: center;
