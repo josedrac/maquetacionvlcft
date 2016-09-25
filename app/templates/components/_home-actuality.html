@@ -1,5 +1,13 @@
-<section class="container-list-group row">
-    {% for elem in actuality %}
-        {% include "/includes/_new.html" %}
-    {% endfor %}
-</section>
+<article class="home-entry-blog pattern_bg">
+	<h1 class="header-section">Valencia Food Blog</h1>
+	<div class="container-list-group row">
+	    {% for elem in actuality %}
+	        {% include "/includes/_new.html" %}
+	    {% endfor %}
+	</div>
+	<footer>
+		<div class="container-links">
+			<a href=""><i class="fa fa-plus-circle" aria-hidden="true"></i> View all entries</a>
+		</div>
+	</footer>
+</article>

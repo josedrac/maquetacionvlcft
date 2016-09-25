@@ -1,0 +1,15 @@
+.home-entry-blog {
+	padding: 50px 0;
+	footer {
+		text-align: center;
+		margin-top: 20px;
+		font-weight: bold;
+		a {
+			color: $colorGold-400;
+			@extend .text-180;
+			&:hover {
+				color: $colorGold-300;
+			}
+		}
+	}
+}

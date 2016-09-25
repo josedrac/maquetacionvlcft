@@ -1,7 +1,8 @@
 .tags {
     font-family: $fontFamily-GothamPro;
     font-weight: 500;
-    .tag {
+	@extend .text-130;
+    a.tag {
         display: inline-block;
         color: $color-new-text-title;
         text-decoration: none;
@@ -9,6 +10,11 @@
         padding: 4px 12px;
         margin-right: 5px;
         margin-bottom: 5px;
-        @include border-radius(15px);
+        @include border-radius(2px);
+		&:hover {
+			background-color: $colorGold-300;
+			color: $colorWhite;
+			border: 1px solid $colorWhite;
+		}
     }
 }
