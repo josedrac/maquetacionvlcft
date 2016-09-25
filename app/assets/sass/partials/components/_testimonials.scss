@@ -12,17 +12,14 @@
             text-align: left;
             margin-top: 0;
             margin-bottom: 30px;
-            font-size: $text-220;
+            @extend .text-260;
 			font-family: $fontFamily-Oswald;
-            font-weight: normal;
+            font-weight: 200;
 			font-style: normal;
-            line-height: 30px;
+            line-height: 35px;
             a {
                 color: $colorGrey-800;
-				font-family:$fontFamily-Oswald;
-	            font-weight: normal;
-				font-style: italic;
-                &:hover {
+				&:hover {
                     color: $colorGold-300;
                 }
             }

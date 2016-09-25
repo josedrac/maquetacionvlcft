@@ -9,6 +9,7 @@ $text-160: 16px;
     $text-180: 18px;
 $text-220: 22px;
 $text-260: 26px;
+	$text-280: 28px;
     $text-300: 30px;
 $text-330: 33px;
 $text-340: 34px;
@@ -27,6 +28,7 @@ $text-540: 54px;
     .text-180 { font-size: $text-180; }
 .text-220 { font-size: $text-220; }
 .text-260 { font-size: $text-260; }
+	.text-280 { font-size: $text-280; }
     .text-300 { font-size: $text-300; }
 .text-330 { font-size: $text-330; }
 .text-340 { font-size: $text-340; }
@@ -46,6 +48,7 @@ $text-540: 54px;
         .text-180 { font-size: #{$text-180 - 0px}; }
     .text-220 { font-size: #{$text-220 - 0px}; }
     .text-260 { font-size: #{$text-260 - 0px}; }
+		.text-280 { font-size: #{$text-280 - 0px}; }
         .text-300 { font-size: #{$text-300 - 0px}; }
     .text-330 { font-size: #{$text-330 - 0px}; }
     .text-340 { font-size: #{$text-340 - 0px}; }
