@@ -3,14 +3,13 @@
   "description": "Mercadona",
   "version": "0.0.1",
   "repository": {
-    "url": "https://github.com/sopraux/mercadona-web-corporativa"
+    "url": "https://github.com/josedrac/maquetacionvlcft"
   },
   "scripts": {
     "postinstall": "bower install"
   },
   "authors": [
-    "Gustavo Lanza Duarte <gustavo.lanza@sopra.com>",
-    "Jacobo Segovia Leon <jacobo.segovia-leon@sopra.com>"
+	  "Jose Drac Llorens <jodrallo@gmail.com>"
   ],
   "private": true,
   "license": "MIT",

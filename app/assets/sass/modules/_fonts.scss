@@ -131,6 +131,28 @@
 }
 
 @font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald/Oswald-Regular.eot');
+    src: url('../fonts/Oswald/Oswald-Regular.woff') format('woff'),
+        url('../fonts/Oswald/Oswald-Regular.ttf') format('truetype'),
+        url('../fonts/Oswald/Oswald-Regular.svg#Oswald-Regular') format('svg'),
+        url('../fonts/Oswald/Oswald-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald/Oswald-RegularItalic.eot');
+    src: url('../fonts/Oswald/Oswald-RegularItalic.woff') format('woff'),
+        url('../fonts/Oswald/Oswald-RegularItalic.ttf') format('truetype'),
+        url('../fonts/Oswald/Oswald-RegularItalic.svg#Oswald-RegularItalic') format('svg'),
+        url('../fonts/Oswald/Oswald-RegularItalic.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
   font-family: 'FontMercadona';
   src:  url('../fonts/icon-mercadona/FontMercadona.eot?xsbixv');
   src:  url('../fonts/icon-mercadona//FontMercadona.eot?xsbixv#iefix') format('embedded-opentype'),

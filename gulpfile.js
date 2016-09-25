@@ -41,7 +41,6 @@
     var dist_js_dir             = 'js';
     var dist_css_dir            = 'css';
     var dist_font_dir           = 'fonts';
-    var dist_font_dir_rob       = path.join(dist_font_dir, 'roboto');
     var dist_font_dir_bootstrap = path.join(dist_font_dir, 'bootstrap');
     var dist_html_dir           = 'templates';
     var dist_img_dir            = 'images';
@@ -70,9 +69,6 @@
     ];
     var vendor_font_src             = [
         './bower_components/font-awesome/fonts/*',
-    ];
-    var vendor_font_src_roboto      = [
-        './bower_components/roboto-fontface/fonts/roboto/*',
     ];
     var vendor_font_src_bootstrap   = [
         './bower_components/bootstrap-sass/assets/fonts/bootstrap/*',
@@ -128,18 +124,12 @@
             .pipe(gulp.dest(getPath(dist_css_dir, argv)));
     }).help = 'Concatenates css vendor files.';
 
-    gulp.task('vendor-fonts-dir', ['vendor-fonts', 'vendor-fonts-roboto', 'vendor-font-bootstrap']).help = 'Adds fonts vendor files.';
+    gulp.task('vendor-fonts-dir', ['vendor-fonts', 'vendor-font-bootstrap']).help = 'Adds fonts vendor files.';
 
     gulp.task('vendor-fonts', function() {
         return gulp
             .src(vendor_font_src)
             .pipe(gulp.dest(getPath(dist_font_dir, argv)));
-    }).help = 'Adds fonts vendor files.';
-
-    gulp.task('vendor-fonts-roboto', function() {
-        return gulp
-            .src(vendor_font_src_roboto)
-            .pipe(gulp.dest(getPath(dist_font_dir_rob, argv)));
     }).help = 'Adds fonts vendor files.';
 
     gulp.task('vendor-font-bootstrap', function() {

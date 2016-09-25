@@ -13,10 +13,15 @@
             margin-top: 0;
             margin-bottom: 30px;
             font-size: $text-220;
-            font-weight: $fontWeight-medium;
+			font-family: $fontFamily-Oswald;
+            font-weight: normal;
+			font-style: normal;
             line-height: 30px;
             a {
                 color: $colorGrey-800;
+				font-family:$fontFamily-Oswald;
+	            font-weight: normal;
+				font-style: italic;
                 &:hover {
                     color: $colorGold-300;
                 }
