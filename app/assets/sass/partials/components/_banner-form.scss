@@ -1,0 +1,69 @@
+.banner-form {
+    position: relative;
+    max-height: 460px;
+    .img-responsive {
+        width: 100%;
+    }
+    &, .banner-content {
+        overflow: hidden;
+    }
+    .banner-form-content {
+        @include vertical-align(absolute);
+        width: 100%;
+        text-align: center;
+    }
+    h2 {
+        font-family: $fontFamily-GothamPro;
+        font-size: 45px;
+        text-transform: uppercase;
+        color: $colorWhite;
+        margin-bottom: 30px;
+    }
+    p {
+        font-family: $fontFamily-GothamPro;
+        font-size: 41px;
+        color: $colorWhite;
+        margin-bottom: 0;
+    }
+    .input-group {
+        max-width: 380px;
+        font-weight: 300;
+    }
+    .nearest-actions {
+        margin-top: 65px;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    button, .input-group {
+        font-family: $fontFamily-GothamPro;
+        font-size: 1.15em;
+    }
+    button {
+        font-weight: bold;
+    }
+    .input-rounded-group-addon {
+        background-color: $colorGold-400;
+    }
+    .icon-input {
+        font-size: 20px;
+        color: $colorWhite;
+    }
+    .icon-search {
+        font-size: 25px;
+        vertical-align: bottom;
+        margin-right: 5px;
+    }
+    @media (min-width: $screen-tablet) {
+        button {
+            margin-right: 40px;
+        }
+    }
+    @media (max-width: $screen-xs-max) {
+        max-height: 250px;
+        min-height: 230px;
+        p {
+            font-size: 1.72em;
+        }
+    }
+}
