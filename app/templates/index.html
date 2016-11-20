@@ -1,25 +1,15 @@
-{% extends "/base/_base.html" %}
+{% extends "/base/_base.html" %} {% block content %} {% include "/components/_carousel.html" %} {% include "/components/_tours-resume.html" %}
 
-{% block content %}
-    {% include "/components/_carousel.html" %}
+<div class="container">
+    {% include "/components/_tour-description.html" %}
+</div>
 
-    {% include "/components/_tours-resume.html" %}
+{% include "/components/_block-info-fullsize.html" %} {% include "/components/_testimonials.html" %}
 
-    <div class="container">
-        {% include "/components/_tour-description.html" %}
-    </div>
+<div class="expanded-container">
+    {% include "/components/_home-actuality.html" %}
+</div>
 
-    {% include "/components/_block-info-fullsize.html" %}
+{% include "/components/_block-gallery.html" %}
 
-    {% include "/components/_testimonials.html" %}
-
-    <div class="expanded-container">
-        {% include "/components/_home-actuality.html" %}
-    </div>
-
-	{% include "/components/_block-gallery.html" %}
-
-	<div class="expanded-container">
-        {% include "/components/_banner-form.html" %}
-    </div>
 {% endblock %}

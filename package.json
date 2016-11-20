@@ -1,6 +1,6 @@
 {
-  "name": "mercadona",
-  "description": "Mercadona",
+  "name": "deliciousValencia",
+  "description": "deliciousValencia",
   "version": "0.0.1",
   "repository": {
     "url": "https://github.com/josedrac/maquetacionvlcft"
@@ -11,30 +11,33 @@
   "authors": [
 	  "Jose Drac Llorens <jodrallo@gmail.com>"
   ],
+  "sasslintConfig": "scss-lint.yml",
   "private": true,
   "license": "MIT",
   "devDependencies": {
-    "child_process": "^1.0.2",
-    "del": "^1.x.x",
-    "gulp": "^3.x.x",
-    "gulp-autoprefixer": ">=2.x.x",
-    "gulp-clean-css": "^2.0.12",
-    "gulp-concat": "^2.x.x",
-    "gulp-connect": "2.2.0",
-    "gulp-github-release": "^1.1.5",
-    "gulp-htmlhint": "^0.3.1",
-    "gulp-if": "^2.0.1",
-    "gulp-jshint": "^1.x.x",
-    "gulp-minify-css": ">=0.5.x",
-    "gulp-notify": "^2.x.x",
-    "gulp-prompt": "^0.2.0",
-    "gulp-sass": ">=1.x.x",
-    "gulp-uglify": ">=1.x.x",
-    "gulp-zip": "^3.2.0",
-    "htmlhint-stylish": "^1.0.3",
-    "jshint-stylish": "^1.0.1",
-    "run-sequence": "^1.x.x",
-    "sassdoc": "^2.x.x",
-    "yargs": "^5.0.0"
-  }
+     "child_process": "^1.0.2",
+     "del": "^1.x.x",
+     "gulp-autoprefixer": ">=2.x.x",
+     "gulp-clean-css": "^2.0.12",
+     "gulp-concat": "^2.x.x",
+     "gulp-connect": "2.2.0",
+     "gulp-github-release": "^1.1.5",
+     "gulp-htmlhint": "^0.3.1",
+     "gulp-if": "^2.0.1",
+     "gulp-jshint": "^1.x.x",
+     "gulp-minify-css": ">=0.5.x",
+     "gulp-notify": "^2.x.x",
+     "gulp-prompt": "^0.2.0",
+     "gulp-sass": ">=1.x.x",
+     "gulp-uglify": ">=1.x.x",
+     "gulp-zip": "^3.2.0",
+     "gulp": "^3.x.x",
+     "htmlhint-stylish": "^1.0.3",
+     "jquery-touchswipe": "^1.6.15",
+     "jshint-stylish": "^1.0.1",
+     "object-fit-images": "^2.5.6",
+     "run-sequence": "^1.x.x",
+     "sassdoc": "^2.x.x",
+     "yargs": "^5.0.0"
+   }
 }

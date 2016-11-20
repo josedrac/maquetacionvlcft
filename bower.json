@@ -18,20 +18,21 @@
     "tests"
   ],
   "devDependencies": {
-    "jquery": "2.1.1",
-    "jQuery.mmenu": "5.3.1",
-    "jquery-ui": "1.11",
-    "font-awesome": "*",
-    "bootstrap": "3.3.7",
-    "bootstrap-sass": "3.3.7",
-    "bootstrap-select": "*",
-    "sass-flex-mixin": "*",
-    "wowjs": "1.1.2",
-    "picturefill": "3.0.1",
-    "js-cookie": "^2.1.2",
-    "compass-sass-mixins": "*"
-  },
-  "dependencies": {
-    "modernizr": "components-modernizr#^2.8.3"
-  }
+   "jquery": "2.1.1",
+   "jQuery.mmenu": "5.3.1",
+   "jquery-ui": "1.11",
+   "font-awesome": "*",
+   "bootstrap": "3.3.7",
+   "bootstrap-sass": "3.3.7",
+   "bootstrap-select": "*",
+   "sass-flex-mixin": "*",
+   "wowjs": "1.1.2",
+  "picturefill": "3.0.1",
+   "js-cookie": "^2.1.2",
+   "compass-sass-mixins": "*",
+   "parallax.js": "^1.4.2"
+ },
+ "dependencies": {
+   "modernizr": "components-modernizr#^2.8.3"
+ }
 }

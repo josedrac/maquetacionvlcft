@@ -1,18 +1,20 @@
 form {
-    .required:after {
-        content: "*";
-        color: $colorGold-300;
+    .required::after {
         padding-left: 5px;
-    }
-    .required-l:before {
-        content: "*";
         color: $colorGold-300;
-        padding-right: 5px;
+        content: "*";
     }
+
+    .required-l::before {
+        padding-right: 5px;
+        color: $colorGold-300;
+        content: "*";
+    }
+
     label {
+        color: $colorGrey-600;
         font-family: $fontFamily-GothamPro;
         font-weight: normal;
-        color: $colorGrey-600;
     }
     @media (min-width: $screen-tablet) {
         label {
@@ -25,7 +27,8 @@ form {
         }
     }
 }
+
 .checkbox label {
-    font-family: $fontFamily-GothamPro;
     color: $colorGrey-400;
+    font-family: $fontFamily-GothamPro;
 }

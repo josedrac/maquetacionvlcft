@@ -87,3 +87,40 @@
     > Font Metrics 1024; 6.25; 50;
 
     > Version 1.0
+
+	### Object fit module
+
+	Module used: [object-fit-images](https://github.com/bfred-it/object-fit-images)
+
+	Once installed, import `<script src="js/ofi.browser.js"></script>`
+
+	The [author mixin](https://github.com/bfred-it/object-fit-images/blob/gh-pages/preprocessors/mixin.scss) is imported in `mixins.scss`
+
+	Usage: `@include object-fit(cover);`
+
+	And finally, in the `document.ready` event: `window.objectFitImages();`
+
+	### Linters
+
+	The **linters** used in the project are:
+
+	* Linter Html [(atom plugin)](https://atom.io/packages/linter-htmlhint)
+
+	* Linter Jscs [(atom plugin)](https://atom.io/packages/linter-jscs)
+
+	* Linter Jshint [(atom plugin)](https://atom.io/packages/linter-jshint)
+
+	* Linter Scss [(atom plugin)](https://atom.io/packages/linter-scss-lint)
+
+	*Each linter has his own configuration file. See instructions in the plugin page for more details.*
+https://www.sitepoint.com/getting-started-with-scss-lint/
+	apm install linter-scss-lint
+	Installing linter-scss-lint to /Users/josedrac/.atom/packages ✓
+	apm install linter-jshint
+	Installing linter-jshint to /Users/josedrac/.atom/packages ✓
+	apm install linter-jscs
+	Installing linter-jscs to /Users/josedrac/.atom/packages ✓
+	apm install linter-htmlhint
+	Installing linter-htmlhint to /Users/josedrac/.atom/packages ✓
+	apm install atom-beautify
+	Installing atom-beautify to /Users/josedrac/.atom/packages

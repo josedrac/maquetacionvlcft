@@ -1,5 +1,6 @@
 .last-posts .new-blog {
     display: none;
+
     &:first-child {
         display: inherit;
     }

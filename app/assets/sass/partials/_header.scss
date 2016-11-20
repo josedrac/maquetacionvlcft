@@ -8,18 +8,22 @@
 
     .header-logo {
         padding: 10px 0 18px;
+
         .launcher-menu-mobil {
             background: $colorGold-300;
             color: $colorWhite;
             text-align: center;
             padding: 14px 0;
+
             .nav-phone-launch {
                 font-size: 2.5em;
             }
+
             .launcher-text {
                 font-size: 0.8em;
             }
         }
+
         .logo {
             img {
                 width: 100%;
@@ -27,16 +31,16 @@
             }
             @media(max-width: $screen-xs-max) {
                 text-align: center;
+
                 img {
                     max-width: 260px;
                 }
             }
         }
 
-
-
         .buy-button {
             font-size: 1.08em;
+
             span {
                 font-weight: bold;
                 margin-right: 5px;
@@ -47,11 +51,13 @@
             position: relative;
             height: 70px;
             padding: 0;
+
             .header-phone {
                 height: 100%;
                 background-color: $colorWhite;
                 padding-right: 0;
             }
+
             .launcher-menu-mobil {
                 position: absolute;
                 top: 0;
@@ -61,34 +67,36 @@
                 padding: 10px;
                 background: $colorGold-300;
             }
+
             .logo {
                 padding: 7px 0 0 70px;
                 height: 100%;
-                @include alpha-attribute('background-color', rgba($color-navbar-bg, 0.9), $color-navbar-bg);
+                @include alpha-attribute( 'background-color', rgba($color-navbar-bg, 0.9), $color-navbar-bg);
             }
         }
     }
 
     ul.menu-idioma {
         float: right;
-        margin: 5px 0 0 0;
-        padding: 0px;
+        margin: 5px 0 0;
+        padding: 0;
         list-style: none;
 
-
         & > li.qts_lang_item {
-			&:first-child {
-				margin-left: 0;
-			}
+            &:first-child {
+                margin-left: 0;
+            }
             padding: 0;
             display: inline;
             position: relative;
             line-height: 10px;
             margin: 0 0 0 10px;
+
             a {
                 font-size: 12px;
                 margin-right: 0;
                 text-transform: uppercase;
+
                 img {
                     vertical-align: inherit;
                     margin-right: 5px;
@@ -99,19 +107,21 @@
 
     ul.menu-auxiliar {
         float: right;
-        margin: 5px 0 0 0;
+        margin: 5px 0 0;
         padding: 0;
         list-style: none;
 
         & > li.menu-aux-item {
-            padding: 0px;
+            padding: 0;
             display: inline;
             position: relative;
             line-height: 10px;
             margin: 0;
+
             a {
                 font-size: 12px;
             }
+
             span.separator {
                 padding: 0 10px;
                 color: $colorGreen-300;
@@ -119,32 +129,42 @@
         }
     }
 }
+
 .languages-menu {
     color: $color-header-text-top;
     position: relative;
     display: inline-block;
+
     .separator {
         padding: 0 5px;
     }
+
     li {
         font-family: $fontFamily-GothamPro;
     }
+
     .dropdown-menu {
         @include animation-duration(.3s);
     }
+
     .dropdown-header {
         color: $colorGrey-400;
         font-weight: 500;
     }
-    a, button.btn {
+
+    a,
+    button.btn {
         color: $color-header-text-top;
         padding: 0;
         background: $colorTransparent;
-        font-size: .855em;
-        &:hover, &:focus {
+        font-size: 0.855em;
+
+        &:focus,
+        &:hover {
             color: $color-header-text-top;
         }
     }
+
     .filter-option {
         .text-muted {
             font-size: 1em;
@@ -152,40 +172,51 @@
             padding-right: 4px;
         }
     }
+
     .btn-group.open .dropdown-toggle {
         box-shadow: none;
     }
+
     .dropdown-menu {
         @include border-radius(0);
+
         .divider {
             margin: 5px 0;
         }
+
         .text-muted {
             display: none;
         }
+
         ul {
             padding: 0 15px;
+
             li a {
                 color: $color-header-text-top;
                 font-size: 0.82em;
             }
+
             .dropdown-header {
                 padding-top: 5px;
             }
         }
     }
+
     .bootstrap-select {
         &.open .bs-caret::before {
             content: "\f106";
         }
+
         .bs-caret {
             @include vertical-align(absolute);
             font-family: $fontFamily-fontAwesome;
             right: 12px;
+
             &::before {
                 content: "\f107";
             }
         }
+
         .caret {
             display: none;
         }

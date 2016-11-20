@@ -5,7 +5,7 @@
     var gulp = require('gulp');
 
     // Include Our Plugins
-    var exec              = require('child_process').exec;
+	var exec              = require('child_process').exec;
     var htmlhint          = require("gulp-htmlhint");
     var prompt            = require('gulp-prompt');
     var release           = require('gulp-github-release');
@@ -57,7 +57,10 @@
         './bower_components/modernizr/modernizr.js',
         './bower_components/wowjs/dist/wow.min.js',
         './bower_components/picturefill/dist/picturefill.min.js',
-        './bower_components/js-cookie/src/js.cookie.js'
+        './bower_components/js-cookie/src/js.cookie.js',
+		'./node_modules/object-fit-images/dist/ofi.browser.js',
+		'./bower_components/parallax.js/parallax.min.js',
+		'./node_modules/jquery-touchswipe/jquery.touchSwipe.min.js'
     ];
     var vendor_css_src              = [
         './bower_components/font-awesome/css/font-awesome.min.css',

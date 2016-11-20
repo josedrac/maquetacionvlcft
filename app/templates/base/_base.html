@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     {% block head %}
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/vendor.css" />
-        <link rel="stylesheet" href="css/app.css" />
-        <title>{% block title %}Delicious Valencia Unique Food Tours in Valencia. Кулинарные Экскурсии в Валенсии{% endblock %}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <title>{% block title %}Delicious Valencia Unique Food Tours in Valencia. Кулинарные Экскурсии в Валенсии{% endblock %}</title>
     {% endblock %}
 </head>
+
 <body>
     <div class="webpage">
-        {% include "/components/_cookies.html" %}
-        {% block header %}
-            <header class="header">
-                {% include "/components/_header.html" %}
-            </header>
-            <div class="nav-content open">
-                {% include "/components/_navbar.html" %}
-            </div>
+        {% include "/components/_cookies.html" %} {% block header %}
+        <header class="header">
+            {% include "/components/_header.html" %}
+        </header>
+        <div class="nav-content open">
+            {% include "/components/_navbar.html" %}
+        </div>
         {% endblock %}
         <div class="contents">
             {% block content %}
             {% endblock %}
         </div>
-        <footer class="footer-mercadona">
-            {% include "/components/_footer.html" %}
-        </footer>
     </div>
 
     <script src="js/jquery.min.js"></script>
-    {% if recaptcha %}
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    {% endif %}
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.mmenu.min.all.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/js.cookie.js"></script>
-    <script src="js/bootstrap-select.min.js"></script>
     <script src="js/modernizr.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="js/picturefill.min.js"></script>
+    <!-- <script src="js/picturefill.min.js"></script> -->
+    <script src="js/parallax.min.js"></script>
+    <script src="js/ofi.browser.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
     <script src="js/app.js"></script>
 </body>
+
 </html>

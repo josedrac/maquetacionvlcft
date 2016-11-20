@@ -4,22 +4,18 @@
 // $paletteGreen: #def3f3 #20b1af #62c2c6 #62a5a1 #4e8481 #3A615F;
 // $paletteRed: #E8530A #C04508 #D81C12 #993706;
 // $paletteBlue: #059FF5 #39579A;
-
-$paletteBlack:  #404040 #333333 #2a2a2a;
-$paletteGrey:   #f4f4f4 #dddddd #cccccc #949494 #868686 #666666 #545454 #333333;
-$paletteGold:   #e9ca80 #dfb041 #d49602 #a3865b;
-$paletteGreen:  #def3f3 #96d6d9 #79d0cf #62c2c6 #62a5a1 #20b1af #289593;
-$paletteRed:    #FFDFE0 #C89797 #790000;
-$paletteBlue:   #0092ef #39579A;
-
+$paletteBlack: #404040 #333333 #2a2a2a;
+$paletteGrey: #f4f4f4 #dddddd #cccccc #949494 #868686 #666666 #545454 #333333;
+$paletteGold: #e9ca80 #dfb041 #d49602 #a3865b;
+$paletteGreen: #def3f3 #96d6d9 #79d0cf #62c2c6 #62a5a1 #20b1af #289593;
+$paletteRed: #FFDFE0 #C89797 #790000;
+$paletteBlue: #0092ef #39579A;
 $colorTransparent: transparent;
 $colorBlack: #000000;
 $colorWhite: #ffffff;
-
 $colorBlack-100: nth($paletteBlack, 1);
 $colorBlack-200: nth($paletteBlack, 2);
 $colorBlack-300: nth($paletteBlack, 3);
-
 $colorGrey-100: nth($paletteGrey, 1);
 $colorGrey-200: nth($paletteGrey, 2);
 $colorGrey-300: nth($paletteGrey, 3);
@@ -28,12 +24,10 @@ $colorGrey-500: nth($paletteGrey, 5);
 $colorGrey-600: nth($paletteGrey, 6);
 $colorGrey-700: nth($paletteGrey, 7);
 $colorGrey-800: nth($paletteGrey, 8);
-
 $colorGold-100: nth($paletteGold, 1);
 $colorGold-200: nth($paletteGold, 2);
 $colorGold-300: nth($paletteGold, 3);
 $colorGold-400: nth($paletteGold, 4);
-
 $colorGreen-100: nth($paletteGreen, 1);
 $colorGreen-200: nth($paletteGreen, 2);
 $colorGreen-300: nth($paletteGreen, 3);
@@ -41,10 +35,8 @@ $colorGreen-400: nth($paletteGreen, 4);
 $colorGreen-500: nth($paletteGreen, 5);
 $colorGreen-600: nth($paletteGreen, 6);
 $colorGreen-700: nth($paletteGreen, 7);
-
 $colorRed-100: nth($paletteRed, 1);
 $colorRed-200: nth($paletteRed, 2);
 $colorRed-300: nth($paletteRed, 3);
-
 $colorBlue-100: nth($paletteBlue, 1);
 $colorBlue-200: nth($paletteBlue, 2);

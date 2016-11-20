@@ -1,4 +1,5 @@
-html, body {
+body,
+html {
     a:focus {
         outline: 0;
     }
@@ -7,12 +8,14 @@ html, body {
 
 a {
     @include transition(all 0.3s ease-in);
+
     &:hover {
         @include transition(all 0.1s ease-out);
     }
 }
 
-b, strong {
+b,
+strong {
     font-weight: 800;
 }
 
@@ -30,19 +33,22 @@ p {
     display: flex;
     align-items: center;
 }
-
 @media(max-width: $screen-xs-max) {
     .webpage {
         @include transition(left 0.5s ease);
         position: relative;
-        left: 0%;
+        left: 0;
     }
+
     .nav-phone-open .webpage {
         left: 100%;
     }
+
     .nav-phone-open {
         height: 100%;
-        body, .webpage {
+
+        .webpage,
+        body {
             height: 100%;
         }
     }
@@ -54,6 +60,7 @@ p {
     height: 110px;
     overflow: hidden;
     margin-right: 20px;
+
     img {
         width: auto;
         height: 100%;
@@ -74,7 +81,7 @@ p {
     @include justify-content(center);
     @include flex-flow(column wrap);
     @media(min-width: $screen-tablet) {
-        @include flex-flow(row wrap);
+         @include flex-flow(row wrap);
     }
     @media (max-width: $screen-xs-max) {
         margin-left: $grid-gutter-width / -2;

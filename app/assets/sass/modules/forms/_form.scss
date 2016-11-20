@@ -1,17 +1,22 @@
-.form-group, .g-recaptcha {
+.form-group,
+.g-recaptcha {
     margin-bottom: 30px;
 }
+
 .form-control {
     @include placeholder-font($fontFamily-GothamPro, 300);
     font-family: $fontFamily-GothamPro;
 }
+
 legend {
     font-size: 1em;
     border-bottom: 0;
+
     .title {
         font-weight: bold;
         color: $colorGreen-500;
     }
+
     .info {
         font-family: $fontFamily-GothamPro;
         color: $colorGrey-400;
@@ -21,6 +26,7 @@ legend {
     .form-control {
         font-size: 1.29em;
     }
+
     legend {
         .title {
             font-size: 1.36em;
@@ -32,10 +38,10 @@ legend {
         .title {
             font-size: 1.15em;
         }
+
         .info {
             display: block;
             font-size: 0.85em;
         }
     }
 }
-

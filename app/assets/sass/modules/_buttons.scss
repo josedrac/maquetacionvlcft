@@ -1,18 +1,17 @@
-
 .btn {
-  display: inline-block;
-  text-transform: uppercase;
-  margin-bottom: 0; // For input.btn
-  font-weight: $btn-font-weight;
-  text-align: center;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid transparent;
-  white-space: nowrap;
-  @include button-size(  $padding-xlarge-vertical,   $padding-xlarge-horizontal, $font-size-base - 1, $line-height-base, $btn-border-radius-base);
-  @include user-select(none);
+    font-weight: $btn-font-weight;
+    display: inline-block;
+    margin-bottom: 0; // For input.btn
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    touch-action: manipulation;
+    @include button-size( $padding-xlarge-vertical, $padding-xlarge-horizontal, $font-size-base - 1, $line-height-base, $btn-border-radius-base);
+    @include user-select(none);
 }
 
 .container-buttons-action-center {
@@ -25,8 +24,6 @@
         margin-right: 20px;
     }
 }
-
-
 /*.btn-rounded-shop {
     @include btn-custom(4px, $colorGold-300, $colorWhite, $colorWhite);
     padding: 10px 25px;
@@ -34,32 +31,34 @@
         background-color: $colorGreen-500;
     }
 }*/
-
 .btn-rounded-transparent {
-    @include btn-custom(4px, $colorTransparent, $colorWhite, $colorWhite);
-    border-color: $colorWhite;
-    border-style: solid;
     padding: 8px 20px;
+    border-style: solid;
+    border-color: $colorWhite;
+    @include btn-custom(4px, $colorTransparent, $colorWhite, $colorWhite);
+
     &:hover {
         background-color: $colorGold-300;
     }
 }
 
 .btn-rounded-orange {
-    @include btn-custom(4px, $colorGold-300, $colorWhite, $colorWhite);
-    border-color: $colorWhite;
-    border-style: solid;
     padding: 8px 20px;
+    border-style: solid;
+    border-color: $colorWhite;
+    @include btn-custom(4px, $colorGold-300, $colorWhite, $colorWhite);
+
     &:hover {
         background-color: $colorGreen-500;
     }
 }
 
 .btn-rounded-orange-border {
-    @extend .btn-rounded-transparent;
-    border-color: $colorGold-200;
-    border-style: solid;
     padding: 8px 20px;
+    border-style: solid;
+    border-color: $colorGold-200;
+    @extend .btn-rounded-transparent;
+
     &:hover {
         background-color: $colorGold-300;
     }
@@ -74,6 +73,7 @@
     font-size: 1.145em;
     padding: 0 30px;
     @include btn-custom (25px, $colorGreen-500, $colorWhite, $colorWhite, auto, 50px);
+
     &:hover {
         background-color: $colorGold-300;
     }
@@ -81,8 +81,8 @@
 
 .btn-form-sumbit {
     font-family: $fontFamily-GothamPro;
-    font-weight: bold;
     font-size: 1.15em;
+    font-weight: bold;
     width: 150px;
     @media (max-width: $screen-xs-max) {
         width: 100%;
